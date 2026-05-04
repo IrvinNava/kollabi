@@ -11,8 +11,11 @@
   <script src="{{ asset('admin/vendors/list.js/list.min.js') }}"></script>
   <script src="{{ asset('admin/vendors/feather-icons/feather.min.js') }}"></script>
   <script src="{{ asset('admin/vendors/dayjs/dayjs.min.js') }}"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="{{ asset('admin/js/phoenix.js') }}"></script>
+  
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
   <script src="{{ asset('admin/js/kollabi.js') }}"></script>
 
 <script>const BASEURL = "{{ url('') }}";</script>

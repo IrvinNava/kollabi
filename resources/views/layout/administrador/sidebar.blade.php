@@ -27,6 +27,55 @@
                              </div>
                          </a>
                      </div>
+                     <div class="nav-item-wrapper"><a id="schedule-page" class="nav-link label-1" href="{{url('admin/ventas')}}" role="button" data-bs-toggle="" aria-expanded="false">
+                             <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="list"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Ventas</span></span>
+                             </div>
+                         </a>
+                     </div>
+
+                     <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-inventory" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-inventory">
+                             <div class="d-flex align-items-center">
+                                 <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="clipboard"></span></span><span class="nav-link-text">Inventario</span>
+                             </div>
+                         </a>
+                         <div class="parent-wrapper label-1">
+                             <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-inventory">
+                                 <li class="collapsed-nav-item-title d-none">Inventario
+                                 </li>
+                                 <li class="nav-item"><a id="inventory-page" class="nav-link" href="{{url('admin/inventario')}}">
+                                         <div class="d-flex align-items-center"><span class="nav-link-text">Productos</span>
+                                         </div>
+                                     </a>
+                                 </li>
+                                 <li class="nav-item"><a id="pickups-page" class="nav-link" href="{{url('admin/inventario/paquetes')}}">
+                                         <div class="d-flex align-items-center"><span class="nav-link-text">Paquetes / Recolecciones</span>
+                                         </div>
+                                     </a>
+                                 </li>
+                                 <li class="nav-item"><a id="saved-page" class="nav-link" href="{{url('admin/inventario/apartados')}}">
+                                         <div class="d-flex align-items-center"><span class="nav-link-text">Apartados</span>
+                                         </div>
+                                     </a>
+                                 </li>
+                                 <li class="nav-item"><a id="entries-page" class="nav-link" href="{{url('admin/inventario/entradas')}}">
+                                         <div class="d-flex align-items-center"><span class="nav-link-text">Entradas de mercancía</span>
+                                         </div>
+                                     </a>
+                                 </li>
+                                 <li class="nav-item"><a id="categories-page" class="nav-link" href="{{url('admin/inventario/salidas')}}">
+                                         <div class="d-flex align-items-center"><span class="nav-link-text">Salidas de mercancía</span>
+                                         </div>
+                                     </a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+
+                     <div class="nav-item-wrapper"><a id="schedule-page" class="nav-link label-1" href="" role="button" data-bs-toggle="" aria-expanded="false">
+                             <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather=""></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text"></span></span>
+                             </div>
+                         </a>
+                     </div>
 
                      <!-- Section -->
                      <p class="navbar-vertical-label">Finanzas
@@ -49,20 +98,20 @@
                      </p>
                      <hr class="navbar-vertical-line" />
 
-                     
+
                      <div class="nav-item-wrapper"><a id="press-page" class="nav-link label-1" href="{{url('admin/configuracion/centro-informacion')}}" role="button" data-bs-toggle="" aria-expanded="false">
                              <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="message-square"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Centro de información</span></span>
                              </div>
                          </a>
                      </div>
 
-                     <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-icons" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-icons">
+                     <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-settings" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-settings">
                              <div class="d-flex align-items-center">
                                  <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="settings"></span></span><span class="nav-link-text">Ajustes y configuración</span>
                              </div>
                          </a>
                          <div class="parent-wrapper label-1">
-                             <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-icons">
+                             <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-settings">
                                  <li class="collapsed-nav-item-title d-none">Ajustes
                                  </li>
                                  <li class="nav-item"><a id="profile-page" class="nav-link" href="{{url('admin/configuracion/perfil-del-negocio')}}">
@@ -110,7 +159,7 @@
                      <hr class="navbar-vertical-line d-block" />
 
                      <div class="px-3 pb-3">
-                         <div class="card card-body p-3">
+                         <div class="kollabi-offer card card-body p-3">
                              <h5>¡Tu lealtad tiene premio!</h5>
                              <p class="mb-0">Cumple 1 año con Kollabi y recibe 1 mes gratis en tu suscripción.</p>
                          </div>

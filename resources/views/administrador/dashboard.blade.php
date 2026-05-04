@@ -1,5 +1,5 @@
 @php
-$title = 'Iniciar sesión';
+$title = 'Dashboard';
 @endphp
 
 @include('layout.administrador.header')

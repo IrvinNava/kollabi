@@ -28,6 +28,7 @@
    }
 </script>
 
+<!-- Offcanvas personalización -->
 <div class="offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="settings-offcanvas" aria-labelledby="settings-offcanvasLabel">
 
    <div class="offcanvas-header align-items-start border-bottom flex-column border-translucent">

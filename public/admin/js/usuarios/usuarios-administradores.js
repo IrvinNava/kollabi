@@ -2,7 +2,7 @@ $(function () {
 
    var body = $("body");
 
-   console.log("Usuarios");
+   console.log("Inventario js");
 
    body.on("click", ".btn-delete", function () {
       Swal.fire({

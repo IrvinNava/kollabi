@@ -1150,7 +1150,7 @@
   const glightboxInit = () => {
     if (window.GLightbox) {
       window.GLightbox({
-        selector: '[data-gallery]'
+        selector: '[data-glightbox]'
       });
     }
   };

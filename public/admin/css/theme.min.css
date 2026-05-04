@@ -33841,8 +33841,8 @@ a[href].bg-body-secondary:hover, a[href].bg-body-secondary:focus {
 }
 
 .table > thead > tr > th {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  /* padding-top: 0.625rem;
+  padding-bottom: 0.625rem; */
   line-height: 1;
 }
 .table > thead > tr > th:last-child {

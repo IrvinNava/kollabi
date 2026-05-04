@@ -36,7 +36,7 @@ $title = 'Apariencia';
                            <a href="{{url('admin/configuracion/apariencia')}}" class="d-flex align-items-center link-submenu py-2 active">
                               <i class="mb-1 me-2" data-feather="pen-tool" style="height: 15px; width: 15px;"></i>
                               <div class="lh-sm">
-                                 <p class="mb-0 fs-9 fw-bold">Apriencia</p>
+                                 <p class="mb-0 fs-9 fw-bold">Apariencia</p>
                                  <small>Personaliza tus colores y estilo.</small>
                               </div>
                            </a>

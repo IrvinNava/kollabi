@@ -7,6 +7,8 @@ use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\MarcasController;
 use App\Http\Controllers\AjustesController;
 use App\Http\Controllers\AgendaController;
+use App\Http\Controllers\VentasController;
+use App\Http\Controllers\InventarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +34,7 @@ Route::get('/admin/perfil', [AdminController::class, 'profile']);
 
 
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
+Route::get('/admin/nueva-venta', [VentasController::class, 'nueva']);
 
 // Operación
 Route::get('/admin/marcas', [MarcasController::class, 'marcasListado']);
@@ -40,6 +43,10 @@ Route::get('/admin/marcas/pendientes', [MarcasController::class, 'marcasPendient
 Route::get('/admin/marcas/perfil', [MarcasController::class, 'marcaPerfil']);
 
 Route::get('/admin/agenda', [AgendaController::class, 'agenda']);
+Route::get('/admin/ventas', [VentasController::class, 'ventasListado']);
+Route::get('/admin/inventario', [InventarioController::class, 'inventarioListado']);
+Route::get('/admin/inventario/apartados', [InventarioController::class, 'apartadosListado']);
+Route::get('/admin/inventario/paquetes', [InventarioController::class, 'paquetesListado']);
 
 
 // Accesos y Usuarios
