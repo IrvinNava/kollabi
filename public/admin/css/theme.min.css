@@ -80,8 +80,8 @@
   --phoenix-font-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --phoenix-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --phoenix-body-font-family: var(--phoenix-font-sans-serif);
-  --phoenix-body-font-size: 1rem;
-  --phoenix-body-font-weight: 400;
+  --phoenix-body-font-size: 0.875rem;
+  --phoenix-body-font-weight: 600;
   --phoenix-body-line-height: 1.49;
   --phoenix-body-color: #31374a;
   --phoenix-body-color-rgb: 49, 55, 74;
@@ -11607,7 +11607,7 @@ textarea.form-control-lg {
 }
 
 .fs-9 {
-  font-size: 0.8rem !important;
+  font-size: 0.8125rem !important;
 }
 
 .fs-10 {

@@ -62,7 +62,7 @@
                                          </div>
                                      </a>
                                  </li>
-                                 <li class="nav-item"><a id="categories-page" class="nav-link" href="{{url('admin/inventario/salidas')}}">
+                                 <li class="nav-item"><a id="discontinued-page" class="nav-link" href="{{url('admin/inventario/salidas')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Salidas de mercancía</span>
                                          </div>
                                      </a>

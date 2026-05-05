@@ -8,7 +8,8 @@
   <script src="{{ asset('admin/vendors/is/is.min.js') }}"></script>
   <script src="{{ asset('admin/vendors/fontawesome/all.min.js') }}"></script>
   <script src="{{ asset('admin/vendors/lodash/lodash.min.js') }}"></script>
-  <script src="{{ asset('admin/vendors/list.js/list.min.js') }}"></script>
+  <!-- <script src="{{ asset('admin/vendors/list.js/list.min.js') }}"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.2/list.min.js" integrity="sha512-MT5YyrGWqMGkIbwkVUZEWGrRDjlNx8loukEdFyzLo4s8INKVxnDQy2eFcpmnWGrFwJ+X8mRTQOJpWCayXz7+Og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="{{ asset('admin/vendors/feather-icons/feather.min.js') }}"></script>
   <script src="{{ asset('admin/vendors/dayjs/dayjs.min.js') }}"></script>
   <script src="{{ asset('admin/js/phoenix.js') }}"></script>

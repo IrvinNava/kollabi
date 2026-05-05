@@ -32,30 +32,36 @@ Route::get('/admin/recuperar-cuenta', [AdminController::class, 'forgotPassword']
 Route::get('/admin/resetear-contrasena', [AdminController::class, 'resetPassword']);
 Route::get('/admin/perfil', [AdminController::class, 'profile']);
 
-
+// Admin 
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
-Route::get('/admin/nueva-venta', [VentasController::class, 'nueva']);
 
-// Operación
+// Admin Operación
 Route::get('/admin/marcas', [MarcasController::class, 'marcasListado']);
 Route::get('/admin/marcas/inactivas', [MarcasController::class, 'marcasInactivas']);
 Route::get('/admin/marcas/pendientes', [MarcasController::class, 'marcasPendientes']);
 Route::get('/admin/marcas/perfil', [MarcasController::class, 'marcaPerfil']);
 
 Route::get('/admin/agenda', [AgendaController::class, 'agenda']);
+
+// Admin Ventas
 Route::get('/admin/ventas', [VentasController::class, 'ventasListado']);
+Route::get('/admin/nueva-venta', [VentasController::class, 'nueva']);
+
+// Admin Inventario 
 Route::get('/admin/inventario', [InventarioController::class, 'inventarioListado']);
 Route::get('/admin/inventario/apartados', [InventarioController::class, 'apartadosListado']);
 Route::get('/admin/inventario/paquetes', [InventarioController::class, 'paquetesListado']);
+Route::get('/admin/inventario/antradas', [InventarioController::class, 'entradasListado']);
+Route::get('/admin/inventario/salidas', [InventarioController::class, 'salidasListado']);
 
 
-// Accesos y Usuarios
+// Admin Accesos y Usuarios
 Route::get('/admin/usuarios', [UsuariosController::class, 'usuariosAdministradores']);
 Route::get('/admin/usuarios/aliados', [UsuariosController::class, 'usuariosAliados']);
 Route::get('/admin/usuarios-editar', [UsuariosController::class, 'usuarioEditar']);
 Route::get('/admin/roles', [UsuariosController::class, 'rolesUsuario']);
 
-// Ajustes y configuración
+// Admin  Ajustes y configuración
 Route::get('/admin/configuracion/perfil-del-negocio', [AjustesController::class, 'perfilNegocio']);
 Route::get('/admin/configuracion/apariencia', [AjustesController::class, 'apariencia']);
 

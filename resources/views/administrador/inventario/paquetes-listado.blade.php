@@ -26,7 +26,7 @@ $title = 'Paquetes / recolecciones';
          </div>
 
          <!-- Table -->
-         <div id="products" data-list='{"valueNames":["articulo","cliente","marca",precio","estado","plazo","ubicacion"],"page":10,"pagination":true}'>
+         <div id="products" data-list='{"valueNames":["articulo","cliente","marca","precio","estado","plazo","ubicacion"],"page":10,"pagination":true}'>
 
             <div class="mb-3">
                <div class="row g-3">
@@ -145,7 +145,7 @@ $title = 'Paquetes / recolecciones';
                               <p class="mb-0 fw-semibold">Casa nube</p>
                            </td>
                            <td class="precio align-middle white-space-nowrap fw-semibold">
-                              <p class="mb-0">$0.00</p>
+                              <p class="mb-0">$120.00</p>
                            </td>
                            <td class="estado align-middle">
                               <span class="badge badge-phoenix badge-phoenix-warning">Por pagar</span>
@@ -176,13 +176,128 @@ $title = 'Paquetes / recolecciones';
                                        data-customer="Andrea Martínez"
                                        data-brand="Casa Nube"
                                        data-item="Vela aromática"
-                                       data-total="350"
-                                       href="avascript:void(0);">
+                                       data-total="120"
+                                       href="javascript:void(0);">
                                        <i data-feather="shopping-bag" class="me-2"></i>Cobrar y entregar</a>
                                  </div>
                               </div>
                            </td>
                         </tr>
+
+                        <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                           <td class="articulo align-middle white-space-nowrap pe-5">
+                              <a class="d-flex align-items-center" href="#package-offcanvas" data-bs-toggle="offcanvas">
+                                 <div class="avatar avatar-l">
+                                    <img class="rounded-3" src="{{ asset('admin/img/placeholders/image-placeholder.svg') }}" alt="" />
+                                 </div>
+                                 <div class="ms-3">
+                                    <p class="mb-0 fw-semibold text-body-emphasis">Aretes de perla</p>
+                                    <p class="mb-0 text-body-quaternary">SKU: PK-0002</p>
+                                 </div>
+                              </a>
+                           </td>
+                           <td class="cliente align-middle white-space-nowrap fw-semibold">
+                              <p class="mb-0">Andrea Martínez</p>
+                           </td>
+                           <td class="marca align-middle white-space-nowrap pe-5">
+                              <p class="mb-0 fw-semibold">Magenta TLX</p>
+                           </td>
+                           <td class="precio align-middle white-space-nowrap fw-semibold">
+                              <p class="mb-0">$0.00</p>
+                           </td>
+                           <td class="estado align-middle">
+                              <span class="badge badge-phoenix badge-phoenix-success">Pagado</span>
+                           </td>
+                           <td class="plazo align-middle white-space-nowrap fw-semibold">
+                              <span class="badge badge-phoenix badge-phoenix-warning">Por vencer</span>
+                              <p class="mb-0 text-body-quaternary">Vence en 7 días</p>
+                           </td>
+                           <td class="ubicacion align-middle">
+                              <p class="mb-0 fw-semibold">Sucursal centro</p>
+                              <p class="mb-0 text-body-quaternary"><span class="me-1 mb-1" data-feather="map-pin" style="height:12px;width:12px;"></span>Bodega</span></p>
+                           </td>
+                           <td class="align-middle white-space-nowrap ps-4 btn-reveal-trigger">
+                              <div class="btn-reveal-trigger position-static">
+                                 <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
+                                 <div class="dropdown-menu dropdown-menu-end py-2">
+                                    <a class="dropdown-item" href="#package-offcanvas" data-bs-toggle="offcanvas"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                    <a class="dropdown-item btn-cancel-package"
+                                       data-code="PK-0002"
+                                       data-customer="Andrea Martínez"
+                                       data-brand="Casa Nube"
+                                       data-item="Vela aromática"
+                                       href="javascript:void(0);">
+                                       <i data-feather="slash" class="me-2"></i>Cancelar</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item btn-complete-paid-pickup"
+                                       data-code="PK-0002"
+                                       data-customer="Andrea Martínez"
+                                       data-brand="Casa Nube"
+                                       data-item="Vela aromática"
+                                       href="javascript:void(0);">
+                                       <i data-feather="shopping-bag" class="me-2"></i>Registrar entrega</a>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+
+                        <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                           <td class="articulo align-middle white-space-nowrap pe-5">
+                              <a class="d-flex align-items-center" href="#package-offcanvas" data-bs-toggle="offcanvas">
+                                 <div class="avatar avatar-l">
+                                    <img class="rounded-3" src="{{ asset('admin/img/placeholders/image-placeholder.svg') }}" alt="" />
+                                 </div>
+                                 <div class="ms-3">
+                                    <p class="mb-0 fw-semibold text-body-emphasis">Collar perrito</p>
+                                    <p class="mb-0 text-body-quaternary">SKU: PK-0003</p>
+                                 </div>
+                              </a>
+                           </td>
+                           <td class="cliente align-middle white-space-nowrap fw-semibold">
+                              <p class="mb-0">Andrea Martínez</p>
+                           </td>
+                           <td class="marca align-middle white-space-nowrap pe-5">
+                              <p class="mb-0 fw-semibold">Magenta TLX</p>
+                           </td>
+                           <td class="precio align-middle white-space-nowrap fw-semibold">
+                              <p class="mb-0">$0.00</p>
+                           </td>
+                           <td class="estado align-middle">
+                              <span class="badge badge-phoenix badge-phoenix-success">Pagado</span>
+                           </td>
+                           <td class="plazo align-middle white-space-nowrap fw-semibold">
+                              <span class="badge badge-phoenix badge-phoenix-danger">Vencido</span>
+                              <p class="mb-0 text-body-quaternary">Venció hace 2 días</p>
+                           </td>
+                           <td class="ubicacion align-middle">
+                              <p class="mb-0 fw-semibold">Sucursal parque</p>
+                              <p class="mb-0 text-body-quaternary"><span class="me-1 mb-1" data-feather="map-pin" style="height:12px;width:12px;"></span>Bodega</span></p>
+                           </td>
+                           <td class="align-middle white-space-nowrap ps-4 btn-reveal-trigger">
+                              <div class="btn-reveal-trigger position-static">
+                                 <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
+                                 <div class="dropdown-menu dropdown-menu-end py-2">
+                                    <a class="dropdown-item" href="#package-offcanvas" data-bs-toggle="offcanvas"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                    <a class="dropdown-item btn-cancel-package"
+                                       data-code="PK-0002"
+                                       data-customer="Andrea Martínez"
+                                       data-brand="Casa Nube"
+                                       data-item="Vela aromática"
+                                       href="javascript:void(0);">
+                                       <i data-feather="slash" class="me-2"></i>Cancelar</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item btn-complete-paid-pickup"
+                                       data-code="PK-0002"
+                                       data-customer="Andrea Martínez"
+                                       data-brand="Casa Nube"
+                                       data-item="Vela aromática"
+                                       href="javascript:void(0);">
+                                       <i data-feather="shopping-bag" class="me-2"></i>Registrar entrega</a>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+
                      </tbody>
                   </table>
                </div>

@@ -22,5 +22,9 @@ class InventarioController extends BaseController
     {
         return view('administrador.inventario.paquetes-listado');
     }
+    public function salidasListado()
+    {
+        return view('administrador.inventario.salidas-listado');
+    }
 
 }

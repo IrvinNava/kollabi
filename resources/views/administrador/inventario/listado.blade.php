@@ -127,8 +127,8 @@ $title = 'Inventario';
                   <form class="row gy-2 gx-2 mt-2 align-items-center more-filters bg-body-emphasis p-2 border rounded-2">
 
                      <div class="col-md-4">
-                        <label class="form-label" for="categoriaFilter">Marca</label>
-                        <select class="form-select form-select-sm" id="categoriaFilter" data-choices="data-choices" multiple="multiple" data-options='{"removeItemButton":true,"placeholder":true}'>
+                        <label class="form-label" for="marcaFilter">Marca</label>
+                        <select class="form-select form-select-sm" id="marcaFilter" multiple>
                            <option>MagentaTLX</option>
                            <option>Luna Boutique</option>
                            <option>Mora Studio</option>
@@ -139,7 +139,7 @@ $title = 'Inventario';
 
                      <div class="col-md-4">
                         <label class="form-label" for="categoriaFilter">Categoría</label>
-                        <select class="form-select form-select-sm" id="categoriaFilter" data-choices="data-choices" multiple="multiple" data-options='{"removeItemButton":true,"placeholder":true}'>
+                        <select class="form-select form-select-sm fs-9" id="categoriaFilter" multiple>
                            <option>Joyería y accesorios</option>
                            <option>Moda y ropa</option>
                            <option>Alimentos y bebidas</option>
@@ -153,11 +153,13 @@ $title = 'Inventario';
                      </div>
 
                      <div class="col-md-4">
-                        <label class="form-label" for="ventasRange">Costo</label>
+                        <label class="form-label" for="ventasRange">Costo <span id="ventasRangeLabel" class="text-body-quaternary">($0 - $1000)</span> </label>
                         <div class="px-2 mt-2">
-                           <div data-nouislider='{"range":{"min":0,"max":1000},"start":[0,1000],"connect":true}'></div>
+                           <div id="ventasRange" data-nouislider='{"range":{"min":0,"max":1000},"start":[0,1000],"connect":true}'></div>
                         </div>
                         <!-- https://refreshless.com/nouislider/ -->
+                        <input type="hidden" id="costoMin" name="costo_min" value="0">
+                        <input type="hidden" id="costoMax" name="costo_max" value="1000">
                      </div>
 
                      <div class="col-md-3">
@@ -225,7 +227,7 @@ $title = 'Inventario';
                               <p class="mb-0">$349.00</p>
                               <span class="text-danger">-10%</span>
                            </td>
-                           <td class="inventario align-middle">
+                           <td class="estado align-middle">
                               <span class="badge badge-phoenix fs-10 badge-phoenix-success text-success"><span class="badge-label">Disponible</span></span>
                            </td>
                            <td class="ubicacion align-middle">
@@ -265,7 +267,7 @@ $title = 'Inventario';
                               <p class="mb-0">$200.00</p>
                               <span class="text-danger"></span>
                            </td>
-                           <td class="inventario align-middle">
+                           <td class="estado align-middle">
                               <span class="badge badge-phoenix fs-10 badge-phoenix-warning">Apartado</span></span>
                            </td>
                            <td class="ubicacion align-middle">
@@ -353,49 +355,61 @@ $title = 'Inventario';
             </div>
             <hr>
             <div class="px-3">
-
                <div class="mb-3">
-                  <div class="tab-pane fade show active" id="tab-information" role="tabpanel" aria-labelledby="information-tab">
-                     <div class="col-12 col-sm-auto">
-                        <h5 class="my-4">Datos del artículo</h5>
-                        <div class="row g-3 flex-sm-column">
+                  <h5 class="my-4">Datos del artículo</h5>
+                  <div class="row g-3 flex-sm-column">
 
-                           <div class="col-6 col-sm-12">
-                              <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="flag" style="stroke-width:2.5;"></span>
-                                 <h6 class="mb-0">Estado</h6>
-                              </div>
-                              <p class="mb-0 ms-4">
-                                 <span class="badge badge-phoenix fs-10 badge-phoenix-success text-success">Disponible</span>
-                                 <span class="badge badge-phoenix fs-10 badge-phoenix-warning">Apartado</span></span>
-                              </p>
-                           </div>
-                           <div class="col-6 col-sm-12">
-                              <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="user" style="stroke-width:2.5;"></span>
-                                 <h6 class="mb-0">Marca</h6>
-                              </div>
-                              <p class="mb-0 fs-9 ms-4">MagentaTLX</p>
-                           </div>
-                           <div class="col-6 col-sm-12">
-                              <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="tag" style="stroke-width:2.5;"></span>
-                                 <h6 class="mb-0">Categoría</h6>
-                              </div>
-                              <p class="mb-0 fs-9 ms-4">Joyería</p>
-                           </div>
-                           <div class="col-6 col-sm-12">
-                              <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="archive" style="stroke-width:2.5;"> </span>
-                                 <h6 class="mb-0">Stock</h6>
-                              </div>
-                              <p class="mb-0 fs-9 ms-4">Sucursal Centro | 2 piezas </p>
-                              <p class="mb-0 fs-9 ms-4">Sucursal Parque | 5 piezas </p>
-                           </div>
-                           <div class="col-6 col-sm-12">
-                              <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="calendar" style="stroke-width:2.5;"></span>
-                                 <h6 class="mb-0">Útimo movimiento</h6>
-                              </div>
-                              <p class="mb-0 ms-4">Entrada - 25 Abril 2026 | 12:00 pm</p>
-                           </div>
+                     <div class="col-6 col-sm-12">
+                        <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="flag" style="stroke-width:2.5;"></span>
+                           <h6 class="mb-0">Estado</h6>
                         </div>
+                        <p class="mb-0 ms-4">
+                           <span class="badge badge-phoenix fs-10 badge-phoenix-success text-success">Disponible</span>
+                           <span class="badge badge-phoenix fs-10 badge-phoenix-warning">Apartado</span></span>
+                        </p>
                      </div>
+                     <div class="col-6 col-sm-12">
+                        <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="user" style="stroke-width:2.5;"></span>
+                           <h6 class="mb-0">Marca</h6>
+                        </div>
+                        <p class="mb-0 fs-9 ms-4">MagentaTLX</p>
+                     </div>
+                     <div class="col-6 col-sm-12">
+                        <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="tag" style="stroke-width:2.5;"></span>
+                           <h6 class="mb-0">Categoría</h6>
+                        </div>
+                        <p class="mb-0 fs-9 ms-4">Joyería</p>
+                     </div>
+                     <div class="col-6 col-sm-12">
+                        <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="archive" style="stroke-width:2.5;"> </span>
+                           <h6 class="mb-0">Stock</h6>
+                        </div>
+                        <p class="mb-0 fs-9 ms-4">Sucursal Centro | 2 piezas</p>
+                        <p class="mb-0 fs-9 ms-4"><span class="text-body-quaternary">Repisa 1</span></p>
+                        <p class="mb-0 fs-9 ms-4">Sucursal Parque | 5 piezas</p>
+                        <p class="mb-0 fs-9 ms-4"><span class="text-body-quaternary">Bodega</span></p>
+                     </div>
+                     <div class="col-6 col-sm-12">
+                        <div class="d-flex align-items-center mb-1"><span class="me-2" data-feather="calendar" style="stroke-width:2.5;"></span>
+                           <h6 class="mb-0">Útimo movimiento</h6>
+                        </div>
+                        <p class="mb-0 ms-4">Entrada - 25 Abril 2026 | 12:00 pm</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <hr>
+
+            <!-- Indicaciones de entrega -->
+            <div class="px-3">
+               <div class="mb-3">
+                  <h5 class="mb-3">Notas</h5>
+
+                  <div class="border rounded-3 p-3 bg-light">
+                     <p class="mb-0 fs-9">
+                        Mantener el producto refrigerado o en un lugar fresco.
+                     </p>
                   </div>
                </div>
             </div>

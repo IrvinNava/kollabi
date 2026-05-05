@@ -122,7 +122,8 @@ tr:hover .td-actions,
    font-size: 14px;
 }
 
-.select2-container--default .select2-selection--multiple {
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single {
    background-color: var(--phoenix-emphasis-bg) !important;
    border: 1px solid var(--phoenix-border-color) !important;
 }
@@ -196,7 +197,7 @@ tr:hover .td-actions,
 }
 
 .noUi-target .noUi-handle .noUi-tooltip {
-   display: block;
+   /* display: block; */
    font-size: 10px !important;
 }
 
@@ -281,6 +282,11 @@ tr:hover .td-actions,
 .text-brand {
    --phoenix-text-opacity: 1;
    color: #9d509a !important;
+}
+
+.bg-kollabi-opacity {
+    --phoenix-bg-opacity: 1;
+    background-color: rgb(157 80 154 / 16%) !important;
 }
 
 /* Fulcallendar */
@@ -644,6 +650,12 @@ tr:hover .td-actions,
 
 .select2-container .select2-selection--single .select2-selection__rendered {
    white-space: inherit !important;
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 34px !important;
 }
 
 
@@ -691,11 +703,18 @@ tr:hover .td-actions,
    height: 37px !important;
 }
 
+/* Tables */
+
+.simplebar-wrapper .simplebar-content {
+   min-height: 250px;
+   min-height: 48.5vh;
+}
+
 @media (min-width:1200px) {
 
    /* Tables */
 
-   .dropdown-table-visible {
+   /* .dropdown-table-visible {
       overflow: visible !important;
    }
 
@@ -709,7 +728,7 @@ tr:hover .td-actions,
 
    .page-link.disabled {
       visibility: hidden;
-   }
+   } */
 }
 
 @media (max-width: 767px) {

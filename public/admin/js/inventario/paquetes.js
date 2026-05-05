@@ -254,7 +254,7 @@ $(function () {
             </div>
          `,
             icon: "success",
-            iconHtml: '<i data-feather="check"></i>',
+            iconHtml: '<i data-feather="check-circle"></i>',
             iconColor: "#fff",
             confirmButtonText: "Aceptar",
             confirmButtonColor: "#49525d",
