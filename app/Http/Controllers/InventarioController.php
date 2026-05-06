@@ -26,5 +26,9 @@ class InventarioController extends BaseController
     {
         return view('administrador.inventario.salidas-listado');
     }
+    public function entradasListado()
+    {
+        return view('administrador.inventario.entradas-listado');
+    }
 
 }

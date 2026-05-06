@@ -51,7 +51,7 @@ Route::get('/admin/nueva-venta', [VentasController::class, 'nueva']);
 Route::get('/admin/inventario', [InventarioController::class, 'inventarioListado']);
 Route::get('/admin/inventario/apartados', [InventarioController::class, 'apartadosListado']);
 Route::get('/admin/inventario/paquetes', [InventarioController::class, 'paquetesListado']);
-Route::get('/admin/inventario/antradas', [InventarioController::class, 'entradasListado']);
+Route::get('/admin/inventario/entradas', [InventarioController::class, 'entradasListado']);
 Route::get('/admin/inventario/salidas', [InventarioController::class, 'salidasListado']);
 
 

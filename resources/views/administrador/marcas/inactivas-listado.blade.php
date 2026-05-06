@@ -24,11 +24,13 @@ $title = 'Marcas inactivas';
                   <h2 class="mb-0">Marcas dadas de baja</h2>
                </div>
             </div>
-            <ul class="nav nav-links mb-3 mb-lg-2 mx-n3">
-               <li class="nav-item"><a class="nav-link" aria-current="page" href="{{url('admin/marcas')}}"><span>Activas </span><span class="text-body-tertiary fw-semibold">(87)</span></a></li>
-               <li class="nav-item"><a class="nav-link pe-none active" href="{{url('admin/marcas/inactivas')}}"><span>Inactivas </span><span class="text-body-tertiary fw-semibold">(26)</span></a></li>
-                              <li class="nav-item"><a class="nav-link" href="{{url('admin/marcas/pendientes')}}"><span>Pendientes </span><span class="text-body-tertiary fw-semibold">(1)</span></a></li>
-            </ul>
+
+            <div class="d-flex flex-wrap gap-2 my-3">
+               <a href="{{url('admin/marcas')}}" class="btn btn-subtle-secondary border btn-sm">Activas (87)</a>
+               <a href="#" class="btn btn-primary border btn-sm pe-none">Inactivas (26)</a>
+               <a href="{{url('admin/marcas/pendientes')}}" class="btn btn-subtle-secondary border btn-sm">Pendientes (1)</a>
+            </div>
+
             <div id="products" data-list='{"valueNames":["marca","responsable","visita","fecha"],"page":10,"pagination":true}'>
                <div class="mb-4">
                   <div class="row g-3">
@@ -48,7 +50,7 @@ $title = 'Marcas inactivas';
                            href="javascript:void(0);" data-bs-toggle="tooltip" id="listaCompacta"
                            data-bs-placement="top" data-bs-title="Lista compacta"><span class="fa-solid fa-list fs-10"></span>
                         </a>
-                        <a class="btn btn-phoenix-primary px-3 me-1 text-body border-0 btn-list-style"
+                        <a class="btn btn-phoenix-primary px-3 me-1 text-body border-0 btn-list-style bg-gray-300"
                            href="javascript:void(0);" data-bs-toggle="tooltip" id="listaExtendida"
                            data-bs-placement="top" data-bs-title="Lista extendida"><span class="" data-feather="list"></span>
                         </a>
@@ -88,7 +90,7 @@ $title = 'Marcas inactivas';
                                  <p class="m-0 mt-1 text-body-quaternary fs--2">22/05/2024</p>
                               </td>
                               <td class="fecha align-middle white-space-nowrap">
-                                    <p class="mb-0 text-body-emphasis">30/05/2024</p>
+                                 <p class="mb-0 text-body-emphasis">30/05/2024</p>
                                  <p class="mb-0 text-body-quaternary">12:15 pm</a>
                               </td>
                               <td class="align-middle white-space-nowrap ps-4 btn-reveal-trigger">
@@ -96,9 +98,9 @@ $title = 'Marcas inactivas';
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
                                        <a class="dropdown-item" href="{{url('admin/marcas/marca-perfil')}}">Ver perfil</a>
-                                       
-                                       
-                                       
+
+
+
                                        <div class="dropdown-divider"></div>
                                        <a class="dropdown-item text-success" href="#!">Restablecer</a>
                                     </div>
@@ -124,7 +126,7 @@ $title = 'Marcas inactivas';
                                  <p class="m-0 mt-1 text-body-quaternary fs--2">22/05/2024</p>
                               </td>
                               <td class="fecha align-middle white-space-nowrap">
-                                    <p class="mb-0 text-body-emphasis">30/05/2024</p>
+                                 <p class="mb-0 text-body-emphasis">30/05/2024</p>
                                  <p class="mb-0 text-body-quaternary">12:15 pm</a>
                               </td>
                               <td class="align-middle white-space-nowrap ps-4 btn-reveal-trigger">
@@ -132,9 +134,9 @@ $title = 'Marcas inactivas';
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
                                        <a class="dropdown-item" href="{{url('admin/marcas/marca-perfil')}}">Ver perfil</a>
-                                       
-                                       
-                                       
+
+
+
                                        <div class="dropdown-divider"></div>
                                        <a class="dropdown-item text-success" href="#!">Restablecer</a>
                                     </div>
@@ -160,7 +162,7 @@ $title = 'Marcas inactivas';
                                  <p class="m-0 mt-1 text-body-quaternary fs--2">22/05/2024</p>
                               </td>
                               <td class="fecha align-middle white-space-nowrap">
-                                    <p class="mb-0 text-body-emphasis">30/05/2024</p>
+                                 <p class="mb-0 text-body-emphasis">30/05/2024</p>
                                  <p class="mb-0 text-body-quaternary">12:15 pm</a>
                               </td>
                               <td class="align-middle white-space-nowrap ps-4 btn-reveal-trigger">
@@ -168,9 +170,9 @@ $title = 'Marcas inactivas';
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
                                        <a class="dropdown-item" href="{{url('admin/marcas/marca-perfil')}}">Ver perfil</a>
-                                       
-                                       
-                                       
+
+
+
                                        <div class="dropdown-divider"></div>
                                        <a class="dropdown-item text-success" href="#!">Restablecer</a>
                                     </div>
@@ -196,7 +198,7 @@ $title = 'Marcas inactivas';
                                  <p class="m-0 mt-1 text-body-quaternary fs--2">22/05/2024</p>
                               </td>
                               <td class="fecha align-middle white-space-nowrap">
-                                    <p class="mb-0 text-body-emphasis">30/05/2024</p>
+                                 <p class="mb-0 text-body-emphasis">30/05/2024</p>
                                  <p class="mb-0 text-body-quaternary">12:15 pm</a>
                               </td>
                               <td class="align-middle white-space-nowrap ps-4 btn-reveal-trigger">
@@ -204,9 +206,9 @@ $title = 'Marcas inactivas';
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
                                        <a class="dropdown-item" href="{{url('admin/marcas/marca-perfil')}}">Ver perfil</a>
-                                       
-                                       
-                                       
+
+
+
                                        <div class="dropdown-divider"></div>
                                        <a class="dropdown-item text-success" href="#!">Restablecer</a>
                                     </div>
@@ -232,7 +234,7 @@ $title = 'Marcas inactivas';
                                  <p class="m-0 mt-1 text-body-quaternary fs--2">22/05/2024</p>
                               </td>
                               <td class="fecha align-middle white-space-nowrap">
-                                    <p class="mb-0 text-body-emphasis">30/05/2024</p>
+                                 <p class="mb-0 text-body-emphasis">30/05/2024</p>
                                  <p class="mb-0 text-body-quaternary">12:15 pm</a>
                               </td>
                               <td class="align-middle white-space-nowrap ps-4 btn-reveal-trigger">
@@ -240,9 +242,9 @@ $title = 'Marcas inactivas';
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
                                        <a class="dropdown-item" href="{{url('admin/marcas/marca-perfil')}}">Ver perfil</a>
-                                       
-                                       
-                                       
+
+
+
                                        <div class="dropdown-divider"></div>
                                        <a class="dropdown-item text-success" href="#!">Restablecer</a>
                                     </div>

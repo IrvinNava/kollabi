@@ -190,9 +190,9 @@
     <div class="modal-header ps-card border-bottom border-translucent justify-content-between">
 
       <div class="d-flex align-items-center" id="scrollspyForms" style="width: 92%;">
-        <span class="fa-stack me-2 ms-n1">
-          <i class="fas fa-circle fa-stack-2x text-gray-200"></i>
-          <i class="fa-stack-1x text-gray-800 fa-regular fa-calendar me-2" data-fa-transform="shrink-2"></i>
+        <span class="d-flex align-items-center fa-stack me-2 ms-n1">
+          <i class="fas fa-circle fa-stack-2x text-gray-200" style="width: 2.0em;"></i>
+          <i class="fa-stack-1x text-gray-800" data-feather="calendar" style="height: 15px; width: 15px;"></i>
         </span>
         <div class="d-flex justify-content-between w-100">
           <h4 class="modal-title text-body-highlight mb-0">${event.title}</h4>

@@ -1,10 +1,10 @@
 @php
-$title = 'Salidas de productos';
+$title = 'Entradas de productos';
 @endphp
 
 @include('layout.administrador.header')
 
-<body data-page="discontinued-page">
+<body data-page="entries-page">
    <main class="main" id="top">
 
       @include('layout.administrador.sidebar')
@@ -14,9 +14,9 @@ $title = 'Salidas de productos';
 
          <div class="d-flex justify-content-between mb-4">
             <div class="col-auto">
-               <h2 class="mb-1">Salidas de productos</h2>
+               <h2 class="mb-1">Entradas de productos</h2>
                <p class="text-body-secondary mb-0">
-                  Consulta y confirma las salidas generadas por las marcas.
+                  Consulta y confirma las entradas generadas por las marcas.
                </p>
             </div>
          </div>
@@ -31,7 +31,7 @@ $title = 'Salidas de productos';
 
                   <!-- Select -->
                   <div class="mb-3">
-                     <p class="mb-2">Elige la marca que va a registrar una salida</p>
+                     <p class="mb-2">Elige la marca que va a registrar una entrada</p>
                      <select class="form-select form-select-sm" id="brandSelect">
                         <option></option>
                      </select>
@@ -46,9 +46,9 @@ $title = 'Salidas de productos';
                            <i data-feather="package" class="text-purple" style="width: 40px; height: 40px;"></i>
                         </div>
 
-                        <p class="mb-2 fw-bold">Al seleccionar una marca, aquí aparecerán los artículos incluidos en la salida pendiente.</p>
+                        <p class="mb-2 fw-bold">Aún no se ha realizado ninguna consulta</p>
                         <p class="text-body-secondary fw-normal mb-0">
-                           Los detalles de los artículos se mostrarán para que puedas revisarlos antes de confirmar la salida.
+                          Selecciona una marca para cargar las entradas pendientes y validar los artículos que serán recibidos físicamente.
                         </p>
                      </div>
                   </div>
@@ -62,9 +62,9 @@ $title = 'Salidas de productos';
                            <i data-feather="check-circle" class="text-purple" style="width: 40px; height: 40px;"></i>
                         </div>
 
-                        <p class="mb-2 fw-bold">No hay salidas pendientes</p>
+                        <p class="mb-2 fw-bold">No hay entradas pendientes</p>
                         <p class="text-body-secondary fw-normal mb-0">
-                           Por ahora, esta marca no tiene salidas pendientes. Cuando registre artículos para dar de baja, podrás consultarlos y confirmar la salida desde este espacio.
+                           Por ahora, esta marca no tiene entradas pendientes. Cuando registre artículos para entregar en sucursal, podrás consultarlos y confirmar su recepción desde este espacio.
                         </p>
                      </div>
                   </div>
@@ -72,7 +72,7 @@ $title = 'Salidas de productos';
                   <!-- Contenido de Salida -->
                   <div>
                      <div class="alert alert-subtle-secondary py-2 px-2" role="alert">
-                        <span class="ms-1 me-2" data-feather="info"></span>Estos artículos se van a dar de baja por <span class="fw-bold">MagentaTLX</span>. Revisa y confirma la salida física.
+                        <span class="ms-1 me-2" data-feather="info"></span>Estos artículos serán entregados por <span class="fw-bold">MagentaTLX</span>. Revisa y confirma la recepción física.
                      </div>
                      <!-- Table -->
                      <div id="discontinued" data-list='{"valueNames":["articulo","marca","precio","algo"],"page":10,"pagination":true}'>
@@ -234,7 +234,7 @@ $title = 'Salidas de productos';
                            <i data-feather="clipboard" class="" style="width: 20px; height: 20px;"></i>
                         </div>
                         <div class="ms-2">
-                           <h5 class="mb-0">Salida pendiente detectada</h5>
+                           <h5 class="mb-0">Entrada pendiente detectada</h5>
                         </div>
                      </div>
 
@@ -253,7 +253,7 @@ $title = 'Salidas de productos';
                            <span class="me-1" data-feather="list" style="height: 14px; width: 14px;"></span>
                            <span class="">Artículos:</span>
                         </div>
-                        <span class="fw-semibold">3</span>
+                        <span class="fw-semibold">20</span>
                      </div>
 
                      <div class="d-flex justify-content-between align-items-center py-2">
@@ -293,7 +293,7 @@ $title = 'Salidas de productos';
 
                      <button id="btn-registrar-salida" class="btn btn-sm btn-primary w-100">
                         <i data-feather="log-out" class="me-1"></i>
-                        Confirmar salida
+                        Confirmar entrada
                      </button>
 
                   </div>
@@ -461,7 +461,7 @@ $title = 'Salidas de productos';
 
    <script src="{{ asset('admin/vendors/glightbox/glightbox.min.js') }}"></script>
 
-   <script src="{{ asset('admin/js/inventario/salidas.js') }}"></script>
+   <script src="{{ asset('admin/js/inventario/entradas.js') }}"></script>
 
 </body>
 

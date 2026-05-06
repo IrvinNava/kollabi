@@ -40,18 +40,18 @@ $title = 'Marcas pendientes';
                                           <span class="badge badge-phoenix badge-phoenix-success fs-10">
                                              <span class="me-1" data-feather="check-circle" style="height: 12px; width: 12px;"></span>Marca activa
                                           </span>
-                                          <span class="badge badge-phoenix badge-phoenix-secondary fs-10"><span class="me-1" data-feather="calendar" style="height: 12px; width: 12px;"></span>Desde: 03/06/2023</span>
-                                          <a href="" data-bs-toggle="modal" data-bs-target="#addEventModal" class="btn btn-phoenix-primary btn-icon me-2"><i class="fa-regular fa-calendar"></i></a>
+                                          <span class="badge badge-phoenix badge-phoenix-secondary d-flex align-items-center fs-10"><span class="me-1" data-feather="calendar" style="height: 12px; width: 12px;"></span>Desde: 03/06/2023</span>
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#addEventModal" class="btn btn-phoenix-primary text-body btn-icon me-2"><i class="fa-regular fa-calendar"></i></a>
                                        </div>
                                        <div class="d-flex border-top border-dashed mt-3 pt-3">
-                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon me-2"><span class="fa-brands fa-instagram fa-lg"></span></a>
-                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon me-2"><span class="fa-brands fa-threads fa-lg"></span></a>
-                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon me-2"><span class="fa-brands fa-tiktok fa-lg"></span></a>
-                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon me-2"><span class="fa-brands fa-facebook-f fa-lg"></span></a>
-                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon me-2"><span class="fa-brands fa-x-twitter fa-lg"></span></a>
-                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon me-2"><span class="fa-brands fa-linkedin-in fa-lg"></span></a>
-                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon me-2"><span class="fa-solid fa-globe fa-lg"></span></a>
-                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon"><span class="fa-brands fa-whatsapp fa-lg"></span></a>
+                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon text-secondary-darker me-2"><span class="fa-brands fa-instagram fa-lg"></span></a>
+                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon text-secondary-darker me-2"><span class="fa-brands fa-threads fa-lg"></span></a>
+                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon text-secondary-darker me-2"><span class="fa-brands fa-tiktok fa-lg"></span></a>
+                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon text-secondary-darker me-2"><span class="fa-brands fa-facebook-f fa-lg"></span></a>
+                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon text-secondary-darker me-2"><span class="fa-brands fa-x-twitter fa-lg"></span></a>
+                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon text-secondary-darker me-2"><span class="fa-brands fa-linkedin-in fa-lg"></span></a>
+                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon text-secondary-darker me-2"><span class="fa-solid fa-globe fa-lg"></span></a>
+                                          <a href="" target="_blank" class="btn btn-phoenix-primary btn-icon text-secondary-darker"><span class="fa-brands fa-whatsapp fa-lg"></span></a>
                                        </div>
                                        <div class="d-flex alight-items-center justify-content-between mt-3">
                                           <p class="mb-0 fs-10"><span class="fa-solid fa-circle text-success me-1" data-fa-transform="shrink-8"></span>Última actividad: 25/08/2025 | 10:45 am</p>
@@ -68,7 +68,7 @@ $title = 'Marcas pendientes';
                                              <tr>
                                                 <td class="py-2">
                                                    <div class="d-inline-flex align-items-center">
-                                                      <div class="d-flex bg-primary-subtle rounded-circle flex-center me-3" style="width:24px; height:24px"><span class="text-primary" data-feather="user" style="width:14px; height:14px"></span></div>
+                                                      <div class="d-flex bg-body-secondary rounded-circle flex-center me-3" style="width:24px; height:24px"><span class="" data-feather="user" style="width:14px; height:14px"></span></div>
                                                       <p class="fw-bold mb-0">Nombre</p>
                                                    </div>
                                                 </td>
@@ -80,7 +80,7 @@ $title = 'Marcas pendientes';
                                              <tr>
                                                 <td class="py-2">
                                                    <div class="d-inline-flex align-items-center">
-                                                      <div class="d-flex bg-primary-subtle rounded-circle flex-center me-3" style="width:24px; height:24px"><span class="text-primary" data-feather="phone" style="width:14px; height:14px"></span></div>
+                                                      <div class="d-flex bg-body-secondary rounded-circle flex-center me-3" style="width:24px; height:24px"><span class="" data-feather="phone" style="width:14px; height:14px"></span></div>
                                                       <p class="fw-bold mb-0">Teléfono</p>
                                                    </div>
                                                 </td>
@@ -90,7 +90,7 @@ $title = 'Marcas pendientes';
                                              <tr>
                                                 <td class="py-2">
                                                    <div class="d-flex align-items-center">
-                                                      <div class="d-flex bg-primary-subtle rounded-circle flex-center me-3" style="width:24px; height:24px"><span class="text-primary" data-feather="mail" style="width:14px; height:14px"></span></div>
+                                                      <div class="d-flex bg-body-secondary rounded-circle flex-center me-3" style="width:24px; height:24px"><span class="" data-feather="mail" style="width:14px; height:14px"></span></div>
                                                       <p class="fw-bold mb-0">Correo</p>
                                                    </div>
                                                 </td>
@@ -100,7 +100,7 @@ $title = 'Marcas pendientes';
                                              <tr>
                                                 <td class="py-2">
                                                    <div class="d-flex align-items-start">
-                                                      <div class="d-flex bg-primary-subtle rounded-circle flex-center me-3" style="width:24px; height:24px"><span class="text-primary" data-feather="map-pin" style="width:14px; height:14px"></span></div>
+                                                      <div class="d-flex bg-body-secondary rounded-circle flex-center me-3" style="width:24px; height:24px"><span class="" data-feather="map-pin" style="width:14px; height:14px"></span></div>
                                                       <p class="fw-bold mb-0">Dirección</p>
                                                    </div>
                                                 </td>
@@ -133,7 +133,7 @@ $title = 'Marcas pendientes';
                         <div class="card border-0 mb-3">
                            <div class="card-body">
                               <div class="row g-4 g-xl-1 g-xxl-3 justify-content-between">
-                                 <div class="col-sm-auto">
+                                 <div class="col-sm-4">
                                     <div class="d-sm-block d-inline-flex d-md-flex flex-xl-column flex-xxl-row align-items-center align-items-xl-start align-items-xxl-center">
                                        <div class="d-flex bg-success-subtle rounded flex-center me-3 mb-sm-3 mb-md-0 mb-xl-3 mb-xxl-0" style="width:32px; height:32px"><span class="text-success-dark" data-feather="activity" style="width:20px; height:20px"></span></div>
                                        <div>
@@ -142,21 +142,21 @@ $title = 'Marcas pendientes';
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="col-sm-auto">
+                                 <div class="col-sm-4">
                                     <div class="d-sm-block d-inline-flex d-md-flex flex-xl-column flex-xxl-row align-items-center align-items-xl-start align-items-xxl-center border-start-sm ps-sm-5 border-translucent">
-                                       <div class="d-flex bg-info-subtle rounded flex-center me-3 mb-sm-3 mb-md-0 mb-xl-3 mb-xxl-0" style="width:32px; height:32px"><span class="text-info-dark" data-feather="dollar-sign" style="width:20px; height:20px"></span></div>
+                                       <div class="d-flex bg-purple-opacity rounded flex-center me-3 mb-sm-3 mb-md-0 mb-xl-3 mb-xxl-0" style="width:32px; height:32px"><span class="text-purple" data-feather="dollar-sign" style="width:20px; height:20px"></span></div>
                                        <div>
                                           <p class="fw-bold mb-1">Ventas (hoy)</p>
                                           <h4 class="fw-bolder text-nowrap">$637.00</h4>
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="col-sm-auto">
+                                 <div class="col-sm-4">
                                     <div class="d-sm-block d-inline-flex d-md-flex flex-xl-column flex-xxl-row align-items-center align-items-xl-start align-items-xxl-center border-start-sm ps-sm-5 border-translucent">
-                                       <div class="d-flex bg-primary-subtle rounded flex-center me-3 mb-sm-3 mb-md-0 mb-xl-3 mb-xxl-0" style="width:32px; height:32px"><span class="text-primary-dark" data-feather="shopping-bag" style="width:20px; height:20px"></span></div>
+                                       <div class="d-flex bg-orange-opacity rounded flex-center me-3 mb-sm-3 mb-md-0 mb-xl-3 mb-xxl-0" style="width:32px; height:32px"><span class="text-orange" data-feather="shopping-bag" style="width:20px; height:20px"></span></div>
                                        <div>
                                           <p class="fw-bold mb-1">Inventario</p>
-                                          <h4 class="fw-bolder text-nowrap">35</h4>
+                                          <h4 class="fw-bolder text-nowrap">135</h4>
                                        </div>
                                     </div>
                                  </div>
@@ -347,14 +347,14 @@ $title = 'Marcas pendientes';
                                     <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">01 JUN, 2023<br class="d-none d-md-block" /> 10:30 PM</p>
                                  </div>
                                  <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-hand-holding-dollar text-primary-dark fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
+                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-purple-opacity"><span class="fa-solid fa-hand-holding-dollar text-purple fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
                                  </div>
                               </div>
                               <div class="col">
                                  <div class="timeline-item-content ps-6 ps-md-0">
                                     <h5 class="fs-9 lh-sm mb-0">Recolección de corte</h5>
                                     <p class="fs-9 text-body-tertiary fw-bold mb-0">Atendió: Manu</p>
-                                    <p class="small text-secondary-emphasis mb-0 lh-sm readmore">Se hizo la recolección del corte mensual por $2,000 pesos. También dejó un par de paquetes para recolecci+on con clientes.</p>
+                                    <p class="timeline-descripction text-body-secondary mb-0 lh-sm readmore">Se hizo la recolección del corte mensual por $2,000 pesos. También dejó un par de paquetes para recolecci+on con clientes.</p>
                                  </div>
                               </div>
                            </div>
@@ -367,14 +367,14 @@ $title = 'Marcas pendientes';
                                     <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">20 MAY, 2025<br class="d-none d-md-block" /> 12:30 PM</p>
                                  </div>
                                  <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-arrows-rotate text-primary-dark fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
+                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-purple-opacity"><span class="fa-solid fa-arrows-rotate text-purple fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
                                  </div>
                               </div>
                               <div class="col">
                                  <div class="timeline-item-content ps-6 ps-md-0">
-                                    <h5 class="fs-9 lh-sm mb-0">Restocking</h5>
+                                    <h5 class="fs-9 lh-sm mb-0">Entrada de productos</h5>
                                     <p class="fs-9 text-body-secondary fw-semibold mb-0">Atendió: Manu</p>
-                                    <p class="small text-body-secondary mb-0 lh-sm readmore">Se hizo el reabastecimiento de su inventario trayendo 20 artículos.</p>
+                                    <p class="timeline-descripction text-body-secondary mb-0 lh-sm readmore">Se hizo el reabastecimiento de su inventario trayendo 20 artículos.</p>
                                  </div>
                               </div>
                            </div>
@@ -387,14 +387,14 @@ $title = 'Marcas pendientes';
                                     <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">15 MAY, 2025<br class="d-none d-md-block" /> 2:30 PM</p>
                                  </div>
                                  <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-money-bill text-primary-dark fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
+                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-purple-opacity"><span class="fa-solid fa-money-bill text-purple fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
                                  </div>
                               </div>
                               <div class="col">
                                  <div class="timeline-item-content ps-6 ps-md-0">
                                     <h5 class="fs-9 lh-sm mb-0">Pago de mensualidad</h5>
                                     <p class="fs-9 text-body-secondary fw-semibold mb-0">Atendió: Issac</p>
-                                    <p class="small text-body-secondary mb-0 lh-sm readmore">Se realizó el pago de mensualidad correspondiente a su renta por $1,500 pesos.</p>
+                                    <p class="timeline-descripction text-body-secondary mb-0 lh-sm readmore">Se realizó el pago de mensualidad correspondiente a su renta por $1,500 pesos.</p>
                                  </div>
                               </div>
                            </div>
@@ -407,14 +407,14 @@ $title = 'Marcas pendientes';
                                     <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">01 JUN, 2023<br class="d-none d-md-block" /> 10:30 PM</p>
                                  </div>
                                  <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-hand-holding-dollar text-primary-dark fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
+                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-purple-opacity"><span class="fa-solid fa-hand-holding-dollar text-purple fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
                                  </div>
                               </div>
                               <div class="col">
                                  <div class="timeline-item-content ps-6 ps-md-0">
                                     <h5 class="fs-9 lh-sm mb-0">Recolección de corte</h5>
                                     <p class="fs-9 text-body-tertiary fw-bold mb-0">Atendió: Manu</p>
-                                    <p class="small text-secondary-emphasis mb-0 lh-sm readmore">Se hizo la recolección del corte mensual por $2,000 pesos. También dejó un par de paquetes para recolecci+on con clientes.</p>
+                                    <p class="timeline-descripction text-body-secondary mb-0 lh-sm readmore">Se hizo la recolección del corte mensual por $2,000 pesos. También dejó un par de paquetes para recolecci+on con clientes.</p>
                                  </div>
                               </div>
                            </div>
@@ -427,14 +427,14 @@ $title = 'Marcas pendientes';
                                     <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">20 MAY, 2025<br class="d-none d-md-block" /> 12:30 PM</p>
                                  </div>
                                  <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-arrows-rotate text-primary-dark fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
+                                    <div class="icon-item icon-item-sm rounded-7 shadow-none bg-purple-opacity"><span class="fa-solid fa-arrows-rotate text-purple fs-9"></span></div><span class="timeline-bar border-end border-dashed"></span>
                                  </div>
                               </div>
                               <div class="col">
                                  <div class="timeline-item-content ps-6 ps-md-0">
-                                    <h5 class="fs-9 lh-sm mb-0">Restocking</h5>
+                                    <h5 class="fs-9 lh-sm mb-0">Entrada de productos</h5>
                                     <p class="fs-9 text-body-secondary fw-semibold mb-0">Atendió: Manu</p>
-                                    <p class="small text-body-secondary mb-0 lh-sm readmore">Se hizo el reabastecimiento de su inventario trayendo 20 artículos.</p>
+                                    <p class="timeline-descripction text-body-secondary mb-0 lh-sm readmore">Se hizo el reabastecimiento de su inventario trayendo 20 artículos.</p>
                                  </div>
                               </div>
                            </div>
@@ -461,7 +461,7 @@ $title = 'Marcas pendientes';
                   <div class="d-flex align-items-center" id="scrollspyForms">
                      <span class="fa-stack me-2 ms-n1">
                         <i class="fas fa-circle fa-stack-2x text-gray-200"></i>
-                        <i class="fa-stack-1x text-gray-800" data-feather="calendar" style="height: 15px; width: 15px;" data-fa-transform="shrink-2"></i>
+                        <i class="fa-stack-1x text-gray-800" data-feather="box" style="height: 15px; width: 15px;" data-fa-transform="shrink-2"></i>
                      </span>
                      <div class="col">
                         <h5 class="mb-1 position-relative fw-bold fs-8"><span>Renta mensual de <strong>MagentaTLX</strong></span></h5>

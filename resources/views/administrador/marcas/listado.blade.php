@@ -24,11 +24,13 @@ $title = 'Marcas / Aliados';
                   <h2 class="mb-0">Marcas</h2>
                </div>
             </div>
-            <ul class="nav nav-links mb-3 mb-lg-2 mx-n3">
-               <li class="nav-item"><a class="nav-link pe-none active" aria-current="page" href="#"><span>Activas </span><span class="text-body-tertiary fw-semibold">(87)</span></a></li>
-               <li class="nav-item"><a class="nav-link" href="{{url('admin/marcas/inactivas')}}"><span>Inactivas </span><span class="text-body-tertiary fw-semibold">(26)</span></a></li>
-               <li class="nav-item"><a class="nav-link" href="{{url('admin/marcas/pendientes')}}"><span>Pendientes </span><span class="text-body-tertiary fw-semibold">(1)</span></a></li>
-            </ul>
+
+            <div class="d-flex flex-wrap gap-2 my-3">
+               <a href="#" class="btn btn-primary border btn-sm pe-none">Activas (87)</a>
+               <a href="{{url('admin/marcas/inactivas')}}" class="btn btn-subtle-secondary border btn-sm">Inactivas (26)</a>
+               <a href="{{url('admin/marcas/pendientes')}}" class="btn btn-subtle-secondary border btn-sm">Pendientes (1)</a>
+            </div>
+
             <div id="products" data-list='{"valueNames":["marca","responsable","ventas","mensualidad","inventario","visita"],"page":10,"pagination":true}'>
                <div class="mb-4">
                   <div class="row g-3">
@@ -49,7 +51,7 @@ $title = 'Marcas / Aliados';
                            href="javascript:void(0);" data-bs-toggle="tooltip" id="listaCompacta"
                            data-bs-placement="top" data-bs-title="Lista compacta"><span class="fa-solid fa-list fs-10"></span>
                         </a>
-                        <a class="btn btn-phoenix-primary px-3 me-1 text-body border-0 btn-list-style"
+                        <a class="btn btn-phoenix-primary px-3 me-1 text-body border-0 btn-list-style bg-gray-300"
                            href="javascript:void(0);" data-bs-toggle="tooltip" id="listaExtendida"
                            data-bs-placement="top" data-bs-title="Lista extendida"><span class="" data-feather="list"></span>
                         </a>
@@ -133,10 +135,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">MagentaTLX</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -147,7 +149,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$8,000.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-success fw-normal fs-10 text-uppercase">Bueno</span>
@@ -164,9 +165,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -180,10 +182,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">LunaArtesanal</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -194,7 +196,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$3,654.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-warning fw-normal fs-10 text-uppercase">Regular</span>
@@ -211,9 +212,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -227,10 +229,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">VerdeMenta</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -241,7 +243,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$4,251.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-danger fw-normal fs-10 text-uppercase">Malo</span>
@@ -258,9 +259,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -274,10 +276,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">KúrameMX</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -288,7 +290,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$10,048.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-success fw-normal fs-10 text-uppercase">Bueno</span>
@@ -304,9 +305,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -320,10 +322,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">Tribu Urbana</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -334,7 +336,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$5,412.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-success fw-normal fs-10 text-uppercase">Bueno</span>
@@ -351,9 +352,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -367,10 +369,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">Flor de Cacto</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -381,7 +383,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$8,663.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-warning fw-normal fs-10 text-uppercase">Regular</span>
@@ -398,9 +399,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -414,10 +416,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">Ámbar Co.</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -428,7 +430,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$11,034.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-success fw-normal fs-10 text-uppercase">Bueno</span>
@@ -444,9 +445,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -460,10 +462,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">Nube Norte</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -474,7 +476,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$9,831.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-warning fw-normal fs-10 text-uppercase">Regular</span>
@@ -491,9 +492,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -507,10 +509,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">Barro&Tela</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -521,7 +523,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$9,142.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-success fw-normal fs-10 text-uppercase">Bueno</span>
@@ -538,9 +539,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>
@@ -554,10 +556,10 @@ $title = 'Marcas / Aliados';
                                     </div>
                                     <div class="ms-3">
                                        <p class="mb-0 text-body-emphasis fw-bold">Estilo Tierra</p>
-                                       <div class="d-flex td-actions">
-                                          <a href="{{url('admin/marcas/perfil')}}">Perfil</a>
+                                       <div class="td-brand td-actions">
+                                          <a href="{{url('admin/marcas/perfil')}}" class="text-body fw-normal">Perfil</a>
                                           <span class="mx-1">|</span>
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#editUserModal">Ventas</a>
+                                          <a href="#" class="text-body fw-normal">Ventas</a>
                                        </div>
                                     </div>
                                  </div>
@@ -568,7 +570,6 @@ $title = 'Marcas / Aliados';
                               </td>
                               <td class="ventas align-middle white-space-nowrap fw-bold ps-3 text-body-emphasis">
                                  <span>$6,652.00</span>
-                                 <p class="mt-1 text-body-quaternary td-actions last-sale"><span class="me-1 mb-1" data-feather="shopping-bag" style="height:12px;width:12px;"></span>Collar chapa de oro bañado en oro</p>
                               </td>
                               <td class="inventario align-middle ps-3">
                                  <span class="badge text-bg-danger fw-normal fs-10 text-uppercase">Malo</span>
@@ -584,9 +585,10 @@ $title = 'Marcas / Aliados';
                                  <div class="btn-reveal-trigger position-static">
                                     <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
                                     <div class="dropdown-menu dropdown-menu-end py-2">
-                                       <a class="dropdown-item" href="{{url('admin/marca-editar')}}">Editar</a>
+                                       <a class="dropdown-item" href="{{url('admin/marcas/perfil')}}"><i data-feather="eye" class="me-2"></i>Ver detalle</a>
+                                       <a class="dropdown-item" href="javascript:void(0);"><i data-feather="edit-2" class="me-2"></i>Editar</a>
                                        <div class="dropdown-divider"></div>
-                                       <a class="dropdown-item text-danger btn-delete" href="avascript:void(0);">Eliminar</a>
+                                       <a class="dropdown-item btn-delete" href="javascript:void(0);"><i data-feather="trash-2" class="me-2"></i>Eliminar</a>
                                     </div>
                                  </div>
                               </td>

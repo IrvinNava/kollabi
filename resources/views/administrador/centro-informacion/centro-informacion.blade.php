@@ -64,7 +64,7 @@ $title = 'Centro de información';
                            href="javascript:void(0);" data-bs-toggle="tooltip" id="listaCompacta"
                            data-bs-placement="top" data-bs-title="Lista compacta"><span class="fa-solid fa-list fs-10"></span>
                         </a>
-                        <a class="btn btn-phoenix-primary px-3 me-1 text-body border-0 btn-list-style"
+                        <a class="btn btn-phoenix-primary px-3 me-1 text-body border-0 btn-list-style bg-gray-300"
                            href="javascript:void(0);" data-bs-toggle="tooltip" id="listaExtendida"
                            data-bs-placement="top" data-bs-title="Lista extendida"><span class="" data-feather="list"></span>
                         </a>

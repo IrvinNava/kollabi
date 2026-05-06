@@ -8,13 +8,17 @@
    z-index: 1024;
 }
 
-.td-actions {
+.td-actions,
+.td-brand {
    opacity: 0;
+   display: none;
 }
 
 tr:hover .td-actions,
+tr:hover .td-brand
 .element-item:hover .td-actions {
    opacity: 1;
+   display: flex;
 }
 
 .badge-phoenix {
@@ -279,14 +283,30 @@ tr:hover .td-actions,
    background-size: 135px;
 }
 
-.text-brand {
+.text-purple {
    --phoenix-text-opacity: 1;
    color: #9d509a !important;
 }
 
-.bg-kollabi-opacity {
+.text-orange {
+   --phoenix-text-opacity: 1;
+   color: #f29678 !important;
+}
+
+.bg-purple-opacity {
     --phoenix-bg-opacity: 1;
-    background-color: rgb(157 80 154 / 16%) !important;
+    background-color: rgba(157, 80, 154, .16) !important;
+}
+
+.bg-orange-opacity {
+    --phoenix-bg-opacity: 1;
+    background-color: rgba(242, 150, 120, .16) !important;
+}
+
+/* Timeline */
+
+.timeline-descripction {
+   font-size: 11px;
 }
 
 /* Fulcallendar */

@@ -24,11 +24,13 @@ $title = 'Marcas pendientes';
                   <h2 class="mb-0">Marcas pendientes de confirmación</h2>
                </div>
             </div>
-            <ul class="nav nav-links mb-3 mb-lg-2 mx-n3">
-               <li class="nav-item"><a class="nav-link" aria-current="page" href="{{url('admin/marcas')}}"><span>Activas </span><span class="text-body-tertiary fw-semibold">(87)</span></a></li>
-               <li class="nav-item"><a class="nav-link" href="{{url('admin/marcas/inactivas')}}"><span>Inactivas </span><span class="text-body-tertiary fw-semibold">(26)</span></a></li>
-               <li class="nav-item"><a class="nav-link pe-none active" href="{{url('admin/marcas/pendientes')}}"><span>Pendientes </span><span class="text-body-tertiary fw-semibold">(1)</span></a></li>
-            </ul>
+
+            <div class="d-flex flex-wrap gap-2 my-3">
+               <a href="{{url('admin/marcas')}}" class="btn btn-subtle-secondary border btn-sm">Activas (87)</a>
+               <a href="{{url('admin/marcas/inactivas')}}" class="btn btn-subtle-secondary border btn-sm">Inactivas (26)</a>
+               <a href="#" class="btn btn-primary border btn-sm pe-none">Pendientes (1)</a>
+            </div>
+
             <div id="products" data-list='{"valueNames":["marca","responsable","fecha"],"page":10,"pagination":true}'>
                <div class="mb-4">
                   <div class="row g-3">
@@ -48,7 +50,7 @@ $title = 'Marcas pendientes';
                            href="javascript:void(0);" data-bs-toggle="tooltip" id="listaCompacta"
                            data-bs-placement="top" data-bs-title="Lista compacta"><span class="fa-solid fa-list fs-10"></span>
                         </a>
-                        <a class="btn btn-phoenix-primary px-3 me-1 text-body border-0 btn-list-style"
+                        <a class="btn btn-phoenix-primary px-3 me-1 text-body border-0 btn-list-style bg-gray-300"
                            href="javascript:void(0);" data-bs-toggle="tooltip" id="listaExtendida"
                            data-bs-placement="top" data-bs-title="Lista extendida"><span class="" data-feather="list"></span>
                         </a>
@@ -61,10 +63,10 @@ $title = 'Marcas pendientes';
                      <table id="marcasTable" class="table table-hover fs-9 mb-0 w-100 kollabi-table">
                         <thead>
                            <tr>
-                              <th class="sort align-middle" scope="col" data-sort="marca">NOMBRE COMERCIAL</th>
-                              <th class="sort align-middle" scope="col" data-sort="responsable">RESPONSABLE</th>
-                              <th class="sort align-middle" scope="col" data-sort="fecha">FECHA DE INVITACIÓN</th>
-                              <th class="sort align-middle" scope="col" data-sort="last-order"></th>
+                              <th class="sort align-middle py-3" scope="col" data-sort="marca">NOMBRE COMERCIAL</th>
+                              <th class="sort align-middle py-3" scope="col" data-sort="responsable">RESPONSABLE</th>
+                              <th class="sort align-middle py-3" scope="col" data-sort="fecha">FECHA DE INVITACIÓN</th>
+                              <th class="sort align-middle py-3" scope="col" data-sort="last-order"></th>
                            </tr>
                         </thead>
                         <tbody class="list" id="marcas-table-body">

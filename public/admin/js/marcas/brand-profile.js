@@ -4,7 +4,7 @@ $(function () {
 
    $('.readmore').readmore({
       speed: 75,
-      collapsedHeight: 30,
+      collapsedHeight: 26,
       moreLink: '<a href="#" style="font-size: 12px; color: #b165a5;">Ver más</a>',
       lessLink: '<a href="#" style="font-size: 12px; color: #b165a5;">Ver menos</a>',
       blockCSS: 'overflow: hidden; width: 50%;',

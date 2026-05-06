@@ -52,6 +52,7 @@ $title = 'Agenda';
         <div class="modal-content border border-translucent"></div>
       </div>
     </div>
+    
 
     <div class="modal fade" id="addEventModal" tabindex="-1" aria-labelledby="addEventModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-md">
