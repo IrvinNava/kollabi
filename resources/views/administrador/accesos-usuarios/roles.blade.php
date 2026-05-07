@@ -14,7 +14,7 @@ $title = 'Roles';
       <div class="content">
          <!-- <nav class="mb-3" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
-               <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Inicio</a></li>
+               <li class="breadcrumb-item"><a href="{{url('app/admin/dashboard')}}">Inicio</a></li>
                <li class="breadcrumb-item active">Marcas</li>
             </ol>
          </nav> -->
@@ -49,9 +49,9 @@ $title = 'Roles';
                      <table id="rolesTable" class="table table-hover fs-9 mb-0 w-100">
                         <thead>
                            <tr>
-                              <th class="sort align-middle pe-5" scope="col" data-sort="rol">ROL</th>
-                              <th class="sort align-middle pe-5" scope="col" data-sort="permisos">PERMISOS</th>
-                              <th class="sort align-middle text-end" scope="col" data-sort="last-order"></th>
+                              <th class="sort align-middle py-3 pe-5" scope="col" data-sort="rol">ROL</th>
+                              <th class="sort align-middle py-3 pe-5" scope="col" data-sort="permisos">PERMISOS</th>
+                              <th class="sort align-middle py-3 text-end" scope="col" data-sort="last-order"></th>
                            </tr>
                         </thead>
                         <tbody class="list" id="roles-table-body">

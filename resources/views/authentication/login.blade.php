@@ -44,11 +44,11 @@ $title = 'Iniciar sesión';
               </div>
             </div>
             <div class="row flex-between-center mb-7">
-              <div class="col-auto"><a class="fs-9 fw-semibold" href="{{url('admin/recuperar-cuenta')}}">Olvidé mi contraseña</a></div>
+              <div class="col-auto"><a class="fs-9 fw-semibold" href="{{url('recuperar-cuenta')}}">Olvidé mi contraseña</a></div>
               <div class="col-auto"></div>
             </div>
-            <a href="{{url('admin/dashboard')}}" class="btn btn-primary w-100 mb-3">Continuar</a>
-            <div class="text-center"><a class="fs-9 fw-bold" href="{{url('admin/crear-cuenta')}}">Crear cuenta</a></div>
+            <a href="{{url('app/admin/dashboard')}}" class="btn btn-primary w-100 mb-3">Continuar</a>
+            <div class="text-center"><a class="fs-9 fw-bold" href="{{url('crear-cuenta')}}">Crear cuenta</a></div>
           </div>
         </div>
       </div>

@@ -10,6 +10,12 @@ $(function () {
       blockCSS: 'overflow: hidden; width: 50%;',
    });
 
+   
+   $('#productLocations').select2({
+      placeholder: 'Selecciona una o más ubicaciones...',
+      width: '100%',
+   });
+
    // Select de marca
    const values = [
       {

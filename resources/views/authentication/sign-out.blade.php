@@ -22,9 +22,9 @@ $title = 'Sesión finalizada';
           <div class="col col-sm-6 col-lg-7 col-xl-6">
             <div class="text-center mb-6 mx-auto">
               <img src="{{ asset('admin/img/brand/kollabi_logo.png') }}" alt="Kollabi" width="250" />
-              <div class="my-6">
+              <div class=" mt-6 mb-5">
                 <h4 class="text-body-highlight mb-3">Sesión finalizada. ¡Vuelve pronto!</h4>
-                <p class="text-body-tertiary">Gracias por confiar en nosotros para gestionar tu colectivo. Estaremos aquí cuando lo necesites.</p>
+                <p class="text-body-tertiary mb-0">Gracias por confiar en nosotros para gestionar tu colectivo. Estaremos aquí cuando lo necesites.</p>
 
                 <!-- - Tu espacio sigue creciendo, y nosotros seguimos aquí para apoyarte en cada paso.
                 -Tómate un respiro, tu showroom está en buenas manos.
@@ -35,13 +35,13 @@ $title = 'Sesión finalizada';
                 -Con cada acción, estás transformando tu espacio. Gracias por ser parte del cambio.
                 -Tu dedicación mueve al colectivo. Aquí estaremos cuando regreses.
                 -Tu impacto sigue creciendo. ¡Nos vemos pronto para seguir construyendo juntos! -->
-
               </div>
-              <div class="d-grid mt-5 mb-3">
-                <a class="btn btn-primary" href="{{url('admin/login')}}"><span class="fas fa-angle-left me-2"></span>Iniciar sesión</a>
+              
+              <div class="d-grid mb-5">
+                <a class="btn btn-primary" href="{{url('login')}}"><span class="fas fa-angle-left me-2"></span>Iniciar sesión</a>
               </div>
+              <p>Gracias por usar Kollabi.</p>
 
-              <small>Gracias por usar Kollabi.</small>
             </div>
           </div>
         </div>

@@ -94,7 +94,7 @@ $(function () {
       if (numeroArticulos === 0) {
          Swal.fire({
             title: "Sin artículos seleccionados",
-            text: "Selecciona al menos un producto para registrar su salida.",
+            text: "Selecciona al menos un producto para registrar su entrada.",
             icon: "warning",
             iconHtml: '<i data-feather="alert-triangle"></i>',
             iconColor: '#fff',
@@ -116,21 +116,21 @@ $(function () {
       }
 
       Swal.fire({
-         title: "¿Registrar salida?",
+         title: "¿Registrar entrada?",
          html: `
          <p class="mb-0">
-            Se darán de baja <strong>${numeroArticulos}</strong> 
-            ${numeroArticulos === 1 ? "artículo seleccionado" : "artículos seleccionados"} del inventario.
+            Se registrarán <strong>${numeroArticulos}</strong> 
+            ${numeroArticulos === 1 ? "artículo" : "artículos"} al inventario.
          </p>
          <p class="text-body-secondary mt-2 mb-0">
-            Esta acción registrará la salida de mercancía.
+            Esta acción añadirá productos al inventario de la sucursal.
          </p>
       `,
          icon: "question",
          iconHtml: '<i data-feather="log-out"></i>',
          iconColor: "#fff",
          showCancelButton: true,
-         confirmButtonText: "Sí, registrar salida",
+         confirmButtonText: "Sí, registrar entrada",
          cancelButtonText: "Cancelar",
          reverseButtons: true,
          confirmButtonColor: "#25b003",
@@ -154,10 +154,10 @@ $(function () {
          // Por ahora solo simulamos la baja visualmente o la confirmación.
 
          Swal.fire({
-            title: "Salida registrada",
+            title: "Entrada registrada",
             html: `
             <p class="mb-0">
-               Se registró correctamente la salida de 
+               Se registró correctamente la entrada de 
                <strong>${numeroArticulos}</strong> 
                ${numeroArticulos === 1 ? "artículo" : "artículos"}.
             </p>

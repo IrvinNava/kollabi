@@ -14,7 +14,7 @@ $title = 'Aliados';
       <div class="content">
          <!-- <nav class="mb-3" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
-               <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Inicio</a></li>
+               <li class="breadcrumb-item"><a href="{{url('app/admin/dashboard')}}">Inicio</a></li>
                <li class="breadcrumb-item active">Marcas</li>
             </ol>
          </nav> -->
@@ -25,7 +25,7 @@ $title = 'Aliados';
                </div>
             </div>
             <ul class="nav nav-links mb-3 mb-lg-2 mx-n3">
-               <li class="nav-item"><a class="nav-link" href="{{url('admin/usuarios')}}"><span>Administradores </span><span class="text-body-tertiary fw-semibold">(5)</span></a></li>
+               <li class="nav-item"><a class="nav-link" href="{{url('app/admin/usuarios')}}"><span>Administradores </span><span class="text-body-tertiary fw-semibold">(5)</span></a></li>
                <li class="nav-item"><a class="nav-link pe-none active" href="javascript:void(0);" aria-current="page"><span>Aliados </span><span class="text-body-tertiary fw-semibold">(46)</span></a></li>
             </ul>
             <div id="products" data-list='{"valueNames":["nombre","correo","marca","ubicacion","actividad","visita"],"page":10,"pagination":true}'>
@@ -83,7 +83,7 @@ $title = 'Aliados';
                                  <p class="mb-0">cyberelizabeth@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/magenta.jpg') }}" alt="" />
                                     </div>
@@ -110,7 +110,7 @@ $title = 'Aliados';
                                  <p class="mb-0">carlos@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>
@@ -137,7 +137,7 @@ $title = 'Aliados';
                                  <p class="mb-0">sofia@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>
@@ -164,7 +164,7 @@ $title = 'Aliados';
                                  <p class="mb-0">torres@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>
@@ -191,7 +191,7 @@ $title = 'Aliados';
                                  <p class="mb-0">ayala@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>
@@ -218,7 +218,7 @@ $title = 'Aliados';
                                  <p class="mb-0">paredes@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>
@@ -245,7 +245,7 @@ $title = 'Aliados';
                                  <p class="mb-0">mendez@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>
@@ -272,7 +272,7 @@ $title = 'Aliados';
                                  <p class="mb-0">lopez@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>
@@ -299,7 +299,7 @@ $title = 'Aliados';
                                  <p class="mb-0">cruz@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>
@@ -326,7 +326,7 @@ $title = 'Aliados';
                                  <p class="mb-0">tomas@gmail.com</p>
                               </td>
                               <td class="marca align-middle pe-5">
-                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('admin/marca-perfil')}}">
+                                 <a class="d-flex align-items-center text-body-emphasis" href="{{url('app/admin/marca-perfil')}}">
                                     <div class="avatar avatar-m">
                                        <img class="rounded-circle" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" />
                                     </div>

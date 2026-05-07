@@ -1,7 +1,10 @@
 :root {
-   --kollabi-naranja: #f29678;
-   --kollabi-morado: #b06fac;
-   --kollabi-gris: #868686;
+   --kollabi-gray: #868686;
+   --kollabi-orange: #f29678;
+   --kollabi-purple: #9d509a;
+   --kollabi-purple-light: #b06fac;
+   --kollabi-purple-opacity: rgba(157, 80, 154, .16);
+   --kollabi-orange-opacity: rgba(242, 150, 120, .16);
 }
 
 .navbar-vertical {
@@ -15,8 +18,7 @@
 }
 
 tr:hover .td-actions,
-tr:hover .td-brand
-.element-item:hover .td-actions {
+tr:hover .td-brand .element-item:hover .td-actions {
    opacity: 1;
    display: flex;
 }
@@ -27,17 +29,31 @@ tr:hover .td-brand
    align-items: center;
 }
 
-.loading-shape {
-   background-color: #fff;
+.loading-shape,
+.loading-layer {
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
-   height: 100%;
    z-index: 100;
 }
 
-.loading-shape span {
+.loading-shape {
+   background-color: #fff;
+   height: 100%;
+}
+
+.loading-layer {
+   background-color: rgba(255, 255, 255, .9);
+   height: 100vh;
+}
+
+[data-bs-theme='dark'] .loading-layer {
+   background-color: rgba(0, 0, 0, .7);
+}
+
+.loading-shape span,
+.loading-layer span {
    content: '';
    background-image: url('../img/icons/loading.svg');
    background-repeat: no-repeat;
@@ -272,6 +288,18 @@ tr:hover .td-brand
    top: 11px;
 }
 
+.badge-kollabi-purple {
+   --phoenix-badge-bg: var(--kollabi-purple-opacity);
+   --phoenix-badge-color: var(--kollabi-purple);
+   --phoenix-badge-border-color: var(--kollabi-purple);
+}
+
+.card-kollabi-purple {
+   background-color: var(--kollabi-purple-opacity) !important;
+   color: var(--kollabi-purple) !important;
+   border: 1px solid var(--kollabi-purple) !important;
+}
+
 /* Custom */
 
 .bg-custom {
@@ -285,22 +313,22 @@ tr:hover .td-brand
 
 .text-purple {
    --phoenix-text-opacity: 1;
-   color: #9d509a !important;
+   color: var(--kollabi-purple) !important;
 }
 
 .text-orange {
    --phoenix-text-opacity: 1;
-   color: #f29678 !important;
+   color: var(--kollabi-orange) !important;
 }
 
 .bg-purple-opacity {
-    --phoenix-bg-opacity: 1;
-    background-color: rgba(157, 80, 154, .16) !important;
+   --phoenix-bg-opacity: 1;
+   background-color: var(--kollabi-purple-opacity) !important;
 }
 
 .bg-orange-opacity {
-    --phoenix-bg-opacity: 1;
-    background-color: rgba(242, 150, 120, .16) !important;
+   --phoenix-bg-opacity: 1;
+   background-color: var(--kollabi-orange-opacity) !important;
 }
 
 /* Timeline */
@@ -675,7 +703,7 @@ tr:hover .td-brand
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 34px !important;
+   height: 34px !important;
 }
 
 

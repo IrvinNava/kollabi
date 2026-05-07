@@ -14,7 +14,7 @@ $title = 'Categorías';
       <div class="content">
          <!-- <nav class="mb-3" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
-               <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Inicio</a></li>
+               <li class="breadcrumb-item"><a href="{{url('app/admin/dashboard')}}">Inicio</a></li>
                <li class="breadcrumb-item active">Marcas</li>
             </ol>
          </nav> -->

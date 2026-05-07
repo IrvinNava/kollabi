@@ -14,7 +14,7 @@ $title = 'Planes de renta';
       <div class="content">
          <!-- <nav class="mb-3" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
-               <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Inicio</a></li>
+               <li class="breadcrumb-item"><a href="{{url('app/admin/dashboard')}}">Inicio</a></li>
                <li class="breadcrumb-item active">Marcas</li>
             </ol>
          </nav> -->
@@ -71,7 +71,7 @@ $title = 'Planes de renta';
                            data-bs-placement="top" data-bs-title="Lista extendida"><span class="" data-feather="list"></span>
                         </a>
                         <!-- <button class="btn btn-link text-success me-4 px-0"><span class="fa-solid fa-file-export fs-9 me-2"></span>Exportar</button> -->
-                        <a href="{{url('admin/configuracion/planes/nuevo')}}" class="btn btn-primary"><span class="fas fa-plus me-2"></span>Agregar plan</a>
+                        <a href="{{url('app/admin/configuracion/planes/nuevo')}}" class="btn btn-primary"><span class="fas fa-plus me-2"></span>Agregar plan</a>
                      </div>
                   </div>
 
@@ -94,7 +94,7 @@ $title = 'Planes de renta';
                                  <div class="d-flex td-actions">
                                     <a href="#profile-offcanvas" data-bs-toggle="offcanvas">Ver</a>
                                     <span class="mx-2">|</span>
-                                    <a href="{{url('admin/configuracion/planes/editar')}}">Editar</a>
+                                    <a href="{{url('app/admin/configuracion/planes/editar')}}">Editar</a>
                                     <span class="mx-2">|</span>
                                     <a href="javascript:void(0);" class="btn-delete">Eliminar</a>
                                  </div>
@@ -115,7 +115,7 @@ $title = 'Planes de renta';
                                  <div class="d-flex td-actions">
                                     <a href="#profile-offcanvas" data-bs-toggle="offcanvas">Ver</a>
                                     <span class="mx-2">|</span>
-                                    <a href="{{url('admin/configuracion/planes/editar')}}">Editar</a>
+                                    <a href="{{url('app/admin/configuracion/planes/editar')}}">Editar</a>
                                     <span class="mx-2">|</span>
                                     <a href="javascript:void(0);" class="btn-delete">Eliminar</a>
                                  </div>
@@ -136,7 +136,7 @@ $title = 'Planes de renta';
                                  <div class="d-flex td-actions">
                                     <a href="#profile-offcanvas" data-bs-toggle="offcanvas">Ver</a>
                                     <span class="mx-2">|</span>
-                                    <a href="{{url('admin/configuracion/planes/editar')}}">Editar</a>
+                                    <a href="{{url('app/admin/configuracion/planes/editar')}}">Editar</a>
                                     <span class="mx-2">|</span>
                                     <a href="javascript:void(0);" class="btn-delete">Eliminar</a>
                                  </div>
@@ -157,7 +157,7 @@ $title = 'Planes de renta';
                                  <div class="d-flex td-actions">
                                     <a href="#profile-offcanvas" data-bs-toggle="offcanvas">Ver</a>
                                     <span class="mx-2">|</span>
-                                    <a href="{{url('admin/configuracion/planes/editar')}}">Editar</a>
+                                    <a href="{{url('app/admin/configuracion/planes/editar')}}">Editar</a>
                                     <span class="mx-2">|</span>
                                     <a href="javascript:void(0);" class="btn-delete">Eliminar</a>
                                  </div>
@@ -178,7 +178,7 @@ $title = 'Planes de renta';
                                  <div class="d-flex td-actions">
                                     <a href="#profile-offcanvas" data-bs-toggle="offcanvas">Ver</a>
                                     <span class="mx-2">|</span>
-                                    <a href="{{url('admin/configuracion/planes/editar')}}">Editar</a>
+                                    <a href="{{url('app/admin/configuracion/planes/editar')}}">Editar</a>
                                     <span class="mx-2">|</span>
                                     <a href="javascript:void(0);" class="btn-delete">Eliminar</a>
                                  </div>

@@ -9,30 +9,6 @@ use Illuminate\Routing\Controller as BaseController;
 
 class AdminController extends BaseController
 {
-    public function login()
-    {
-        return view('administrador.authentication.login');
-    }
-
-    public function signUp()
-    {
-        return view('administrador.authentication.sign-up');
-    }
-
-    public function forgotPassword()
-    {
-        return view('administrador.authentication.forgot-password');
-    }
-
-    public function resetPassword()
-    {
-        return view('administrador.authentication.reset-password');
-    }
-
-    public function signOut()
-    {
-        return view('administrador.authentication.sign-out');
-    }
 
     public function dashboard()
     {
@@ -40,6 +16,6 @@ class AdminController extends BaseController
     }
     public function profile()
     {
-        return view('administrador.perfil');
+        return view('perfil');
     }
 }

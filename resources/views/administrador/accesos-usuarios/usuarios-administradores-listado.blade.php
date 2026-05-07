@@ -14,7 +14,7 @@ $title = 'Usuarios';
       <div class="content">
          <!-- <nav class="mb-3" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
-               <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Inicio</a></li>
+               <li class="breadcrumb-item"><a href="{{url('app/admin/dashboard')}}">Inicio</a></li>
                <li class="breadcrumb-item active">Marcas</li>
             </ol>
          </nav> -->
@@ -26,7 +26,7 @@ $title = 'Usuarios';
             </div>
             <ul class="nav nav-links mb-3 mb-lg-2 mx-n3">
                <li class="nav-item"><a class="nav-link pe-none active" aria-current="page" href="#"><span>Administradores </span><span class="text-body-tertiary fw-semibold">(5)</span></a></li>
-               <li class="nav-item"><a class="nav-link" href="{{url('admin/usuarios/aliados')}}"><span>Aliados </span><span class="text-body-tertiary fw-semibold">(46)</span></a></li>
+               <li class="nav-item"><a class="nav-link" href="{{url('app/admin/usuarios/aliados')}}"><span>Aliados </span><span class="text-body-tertiary fw-semibold">(46)</span></a></li>
             </ul>
             <div id="products" data-list='{"valueNames":["name","rol","email","phone","location","activity","joined"],"page":10,"pagination":true}'>
                <div class="mb-4">

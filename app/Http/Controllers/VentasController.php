@@ -10,12 +10,26 @@ use Illuminate\Routing\Controller as BaseController;
 class VentasController extends BaseController
 {
 
+    // =====================================================
+    // VENDEDOR
+    // =====================================================
+
     public function nueva()
     {
         return view('administrador.ventas.nueva');
     }
 
-    public function listadoVentas()
+    public function posVentasListado()
+    {
+        return view('pos.ventas.listado');
+    }
+
+
+    // =====================================================
+    // ADMINISTRADOR
+    // =====================================================
+
+    public function adminVentasListado()
     {
         return view('administrador.ventas.listado');
     }

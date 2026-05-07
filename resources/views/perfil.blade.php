@@ -15,7 +15,7 @@ $title = 'Plan compartido';
 
          <nav class="mb-3" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
-               <li class="breadcrumb-item fw-semibold"><a href="{{url('admin/dashboard')}}"><img src="{{ asset('admin/img/brand/kollabi_icon.svg') }}" class="ms-1 mb-1" alt="Kollabi" width="18" /></a></li>
+               <li class="breadcrumb-item fw-semibold"><a href="{{url('app/admin/dashboard')}}"><img src="{{ asset('admin/img/brand/kollabi_icon.svg') }}" class="ms-1 mb-1" alt="Kollabi" width="18" /></a></li>
                <li class="breadcrumb-item fw-normal active">Mi perfil</li>
                <li class="breadcrumb-item fw-normal active">Elizabeth Hernández</li>
             </ol>

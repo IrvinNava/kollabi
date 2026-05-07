@@ -4,7 +4,7 @@
          <div class="navbar-vertical-content">
              <ul class="navbar-nav flex-column" id="navbarVerticalNav">
                  <li class="nav-item">
-                     <div class="nav-item-wrapper"><a id="dashboard-page" class="nav-link label-1" href="{{url('admin/dashboard')}}" role="button" data-bs-toggle="" aria-expanded="false">
+                     <div class="nav-item-wrapper"><a id="dashboard-page" class="nav-link label-1" href="{{url('app/admin/dashboard')}}" role="button" data-bs-toggle="" aria-expanded="false">
                              <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="pie-chart"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Dashboard</span></span>
                              </div>
                          </a>
@@ -17,18 +17,18 @@
                      </p>
                      <hr class="navbar-vertical-line" />
 
-                     <div class="nav-item-wrapper"><a id="brands-page" class="nav-link label-1" href="{{url('admin/marcas')}}" role="button" data-bs-toggle="" aria-expanded="false">
+                     <div class="nav-item-wrapper"><a id="brands-page" class="nav-link label-1" href="{{url('app/admin/marcas')}}" role="button" data-bs-toggle="" aria-expanded="false">
                              <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="tag"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Marcas / Aliados </span></span>
                              </div>
                          </a>
                      </div>
-                     <div class="nav-item-wrapper"><a id="schedule-page" class="nav-link label-1" href="{{url('admin/agenda')}}" role="button" data-bs-toggle="" aria-expanded="false">
+                     <div class="nav-item-wrapper"><a id="schedule-page" class="nav-link label-1" href="{{url('app/admin/agenda')}}" role="button" data-bs-toggle="" aria-expanded="false">
                              <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="calendar"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Agenda</span></span>
                              </div>
                          </a>
                      </div>
-                     <div class="nav-item-wrapper"><a id="schedule-page" class="nav-link label-1" href="{{url('admin/ventas')}}" role="button" data-bs-toggle="" aria-expanded="false">
-                             <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="list"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Ventas</span></span>
+                     <div class="nav-item-wrapper"><a id="sales-page" class="nav-link label-1" href="{{url('app/pos/ventas')}}" role="button" data-bs-toggle="" aria-expanded="false">
+                             <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="shopping-cart"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Ventas</span></span>
                              </div>
                          </a>
                      </div>
@@ -42,27 +42,27 @@
                              <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-inventory">
                                  <li class="collapsed-nav-item-title d-none">Inventario
                                  </li>
-                                 <li class="nav-item"><a id="inventory-page" class="nav-link" href="{{url('admin/inventario')}}">
+                                 <li class="nav-item"><a id="inventory-page" class="nav-link" href="{{url('app/admin/inventario')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Productos</span>
                                          </div>
                                      </a>
                                  </li>
-                                 <li class="nav-item"><a id="pickups-page" class="nav-link" href="{{url('admin/inventario/paquetes')}}">
+                                 <li class="nav-item"><a id="pickups-page" class="nav-link" href="{{url('app/admin/inventario/paquetes')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Paquetes/Recolecciones</span>
                                          </div>
                                      </a>
                                  </li>
-                                 <li class="nav-item"><a id="saved-page" class="nav-link" href="{{url('admin/inventario/apartados')}}">
+                                 <li class="nav-item"><a id="saved-page" class="nav-link" href="{{url('app/admin/inventario/apartados')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Apartados</span>
                                          </div>
                                      </a>
                                  </li>
-                                 <li class="nav-item"><a id="entries-page" class="nav-link" href="{{url('admin/inventario/entradas')}}">
+                                 <li class="nav-item"><a id="entries-page" class="nav-link" href="{{url('app/admin/inventario/entradas')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Entradas</span>
                                          </div>
                                      </a>
                                  </li>
-                                 <li class="nav-item"><a id="discontinued-page" class="nav-link" href="{{url('admin/inventario/salidas')}}">
+                                 <li class="nav-item"><a id="discontinued-page" class="nav-link" href="{{url('app/admin/inventario/salidas')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Salidas</span>
                                          </div>
                                      </a>
@@ -82,12 +82,12 @@
                      </p>
                      <hr class="navbar-vertical-line" />
 
-                     <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{url('admin/ventas')}}" role="button" data-bs-toggle="" aria-expanded="false">
+                     <div class="nav-item-wrapper"><a id="sales-performance-page" class="nav-link label-1" href="{{url('app/admin/ventas')}}" role="button" data-bs-toggle="" aria-expanded="false">
                              <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="dollar-sign"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Ventas y comisiones</span></span>
                              </div>
                          </a>
                      </div>
-                     <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{url('admin/reportes')}}" role="button" data-bs-toggle="" aria-expanded="false">
+                     <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{url('app/admin/reportes')}}" role="button" data-bs-toggle="" aria-expanded="false">
                              <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="bar-chart-2"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Reportes financieros</span></span>
                              </div>
                          </a>
@@ -99,7 +99,7 @@
                      <hr class="navbar-vertical-line" />
 
 
-                     <div class="nav-item-wrapper"><a id="press-page" class="nav-link label-1" href="{{url('admin/configuracion/centro-informacion')}}" role="button" data-bs-toggle="" aria-expanded="false">
+                     <div class="nav-item-wrapper"><a id="press-page" class="nav-link label-1" href="{{url('app/admin/configuracion/centro-informacion')}}" role="button" data-bs-toggle="" aria-expanded="false">
                              <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="message-square"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Centro de información</span></span>
                              </div>
                          </a>
@@ -114,17 +114,17 @@
                              <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-settings">
                                  <li class="collapsed-nav-item-title d-none">Ajustes
                                  </li>
-                                 <li class="nav-item"><a id="profile-page" class="nav-link" href="{{url('admin/configuracion/perfil-del-negocio')}}">
+                                 <li class="nav-item"><a id="profile-page" class="nav-link" href="{{url('app/admin/configuracion/perfil-del-negocio')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Perfil del negocio</span>
                                          </div>
                                      </a>
                                  </li>
-                                 <li class="nav-item"><a id="planes-page" class="nav-link" href="{{url('admin/configuracion/planes')}}">
+                                 <li class="nav-item"><a id="planes-page" class="nav-link" href="{{url('app/admin/configuracion/planes')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Planes de renta</span>
                                          </div>
                                      </a>
                                  </li>
-                                 <li class="nav-item"><a id="categories-page" class="nav-link" href="{{url('admin/configuracion/categorias')}}">
+                                 <li class="nav-item"><a id="categories-page" class="nav-link" href="{{url('app/admin/configuracion/categorias')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Categorías</span>
                                          </div>
                                      </a>
@@ -142,12 +142,12 @@
                              <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-config">
                                  <li class="collapsed-nav-item-title d-none">Icons
                                  </li>
-                                 <li class="nav-item"><a id="users-page" class="nav-link" href="{{url('admin/usuarios')}}">
+                                 <li class="nav-item"><a id="users-page" class="nav-link" href="{{url('app/admin/usuarios')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Usuarios</span>
                                          </div>
                                      </a>
                                  </li>
-                                 <li class="nav-item"><a id="rols-page" class="nav-link" href="{{url('admin/roles')}}">
+                                 <li class="nav-item"><a id="rols-page" class="nav-link" href="{{url('app/admin/roles')}}">
                                          <div class="d-flex align-items-center"><span class="nav-link-text">Roles</span>
                                          </div>
                                      </a>

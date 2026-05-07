@@ -68,7 +68,7 @@
       </div>
       <div class="setting-panel-item p-3 border-0">
          <h5 class="setting-panel-item-title">Barra de navegación</h5>
-         <p class="fs-9">Elige el estilo de tu barra lateral. El color que se aplicará puede personalizarse desde la sección de <a href="{{url('admin/configuracion/apariencia')}}">Apariencia<span class="ms-1 mb-1" data-feather="external-link" style="height: 11px; width: 11px;"></span></a>, para que refleje la identidad de tu marca.</p>
+         <p class="fs-9">Elige el estilo de tu barra lateral. El color que se aplicará puede personalizarse desde la sección de <a href="{{url('app/admin/configuracion/apariencia')}}">Apariencia<span class="ms-1 mb-1" data-feather="external-link" style="height: 11px; width: 11px;"></span></a>, para que refleje la identidad de tu marca.</p>
          <div class="row gx-2">
             <div class="col-6">
                <input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" />

@@ -26,21 +26,21 @@ $title = 'Marcas pendientes';
                         </div>
 
                         <div>
-                           <a href="{{url('admin/configuracion/perfil-del-negocio')}}" class="d-flex align-items-center link-submenu py-2">
+                           <a href="{{url('app/admin/configuracion/perfil-del-negocio')}}" class="d-flex align-items-center link-submenu py-2">
                               <i class="mb-1 me-2" data-feather="home" style="height: 15px; width: 15px;"></i>
                               <div class="lh-sm">
                                  <p class="mb-0 fs-9 fw-bold">General</p>
                                  <small>Define los datos públicos de tu espacio</small>
                               </div>
                            </a>
-                           <a href="{{url('admin/configuracion/apariencia')}}" class="d-flex align-items-center link-submenu py-2">
+                           <a href="{{url('app/admin/configuracion/apariencia')}}" class="d-flex align-items-center link-submenu py-2">
                               <i class="mb-1 me-2" data-feather="pen-tool" style="height: 15px; width: 15px;"></i>
                               <div class="lh-sm">
                                  <p class="mb-0 fs-9 fw-bold">Apariencia</p>
                                  <small>Personaliza tus colores y estilo</small>
                               </div>
                            </a>
-                           <a href="{{url('admin/configuracion/sucursales')}}" class="d-flex align-items-center link-submenu active py-2">
+                           <a href="{{url('app/admin/configuracion/sucursales')}}" class="d-flex align-items-center link-submenu active py-2">
                               <i class="mb-1 me-2" data-feather="map-pin" style="height: 15px; width: 15px;"></i>
                               <div class="lh-sm">
                                  <p class="mb-0 fs-9 fw-bold">Sucursales</p>
@@ -59,8 +59,8 @@ $title = 'Marcas pendientes';
 
                   <nav class="mb-3" aria-label="breadcrumb">
                      <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item fw-semibold"><a href="{{url('admin/dashboard')}}"><img src="{{ asset('admin/img/brand/kollabi_icon.svg') }}" class="ms-1 mb-1" alt="Kollabi" width="18" /></a></li>
-                        <li class="breadcrumb-item fw-semibold"><a href="{{url('admin/configuracion/perfil-del-negocio')}}">Perfil del negocio</a></li>
+                        <li class="breadcrumb-item fw-semibold"><a href="{{url('app/admin/dashboard')}}"><img src="{{ asset('admin/img/brand/kollabi_icon.svg') }}" class="ms-1 mb-1" alt="Kollabi" width="18" /></a></li>
+                        <li class="breadcrumb-item fw-semibold"><a href="{{url('app/admin/configuracion/perfil-del-negocio')}}">Perfil del negocio</a></li>
                         <li class="breadcrumb-item fw-normal active">Sucursales</li>
                      </ol>
                   </nav>
@@ -101,7 +101,7 @@ $title = 'Marcas pendientes';
                                        <div class="d-flex td-actions">
                                           <a href="#profile-offcanvas" data-bs-toggle="offcanvas">Ver</a>
                                           <span class="mx-2">|</span>
-                                          <a href="{{url('admin/configuracion/centro-informacion/editar')}}">Editar</a>
+                                          <a href="{{url('app/admin/configuracion/centro-informacion/editar')}}">Editar</a>
                                           <span class="mx-2">|</span>
                                           <a href="javascript:void(0);" class="btn-delete">Eliminar</a>
                                        </div>
@@ -128,7 +128,7 @@ $title = 'Marcas pendientes';
                                        <div class="d-flex td-actions">
                                           <a href="#profile-offcanvas" data-bs-toggle="offcanvas">Ver</a>
                                           <span class="mx-2">|</span>
-                                          <a href="{{url('admin/configuracion/centro-informacion/editar')}}">Editar</a>
+                                          <a href="{{url('app/admin/configuracion/centro-informacion/editar')}}">Editar</a>
                                           <span class="mx-2">|</span>
                                           <a href="javascript:void(0);" class="btn-delete">Eliminar</a>
                                        </div>
@@ -155,7 +155,7 @@ $title = 'Marcas pendientes';
                                        <div class="d-flex td-actions">
                                           <a href="#profile-offcanvas" data-bs-toggle="offcanvas">Ver</a>
                                           <span class="mx-2">|</span>
-                                          <a href="{{url('admin/configuracion/centro-informacion/editar')}}">Editar</a>
+                                          <a href="{{url('app/admin/configuracion/centro-informacion/editar')}}">Editar</a>
                                           <span class="mx-2">|</span>
                                           <a href="javascript:void(0);" class="btn-delete">Eliminar</a>
                                        </div>

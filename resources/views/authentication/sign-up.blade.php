@@ -59,7 +59,7 @@ $title = 'Crear cuenta';
                 <label class="form-label fs-9 text-transform-none" for="termsService">Acepto los <a href="#!">términos </a>y <a href="#!">políticas de privacidad</a></label>
               </div>
               <button class="btn btn-primary w-100 mb-3">Registrárme</button>
-              <div class="text-center"><a class="fs-9 fw-bold" href="{{url('admin/login')}}">Iniciar sesión con una cuenta existente</a></div>
+              <div class="text-center"><a class="fs-9 fw-bold" href="{{url('login')}}">Iniciar sesión con una cuenta existente</a></div>
             </form>
           </div>
         </div>

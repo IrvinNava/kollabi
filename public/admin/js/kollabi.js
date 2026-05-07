@@ -24,4 +24,13 @@ $(document).ready(function () {
       });
    }
 
+   // Test Offcanvas
+   // document.addEventListener('DOMContentLoaded', function () {
+   //    const offcanvasElement = document.getElementById('product-offcanvas');
+   //    if (!offcanvasElement) return;
+   //    const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+   //    offcanvas.show();
+   // });
+
+
 });

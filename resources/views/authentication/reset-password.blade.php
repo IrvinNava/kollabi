@@ -46,7 +46,7 @@ $title = 'Reestablecer contraseña';
                 </div>
               </div>
 
-              <a href="{{url('admin/login')}}" class="btn btn-primary w-100" type="submit">Guardar contraseña</a>
+              <a href="{{url('login')}}" class="btn btn-primary w-100" type="submit">Guardar contraseña</a>
 
             </div>
           </div>

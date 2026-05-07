@@ -16,7 +16,6 @@
              <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
                  <input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Buscar..." aria-label="Search" />
                  <span class="fas fa-search search-box-icon"></span>
-
              </form>
              <div class="btn-close position-absolute end-0 top-50 translate-middle cursor-pointer shadow-none" data-bs-dismiss="search">
                  <button class="btn btn-link p-0" aria-label="Close"></button>
@@ -29,7 +28,7 @@
                          <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Marcas</h6>
                          <div class="py-2">
 
-                             <a class="dropdown-item py-2 d-flex align-items-center" href="{{url('admin/marcas/perfil')}}">
+                             <a class="dropdown-item py-2 d-flex align-items-center" href="{{url('app/admin/marcas/perfil')}}">
                                  <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="{{ asset('admin/img/magenta.jpg') }}" alt="" /></div>
                                  <div class="flex-1">
                                      <h6 class="mb-0 text-body-highlight title">MagentaTLX</h6>
@@ -37,7 +36,7 @@
                                  </div>
                              </a>
 
-                             <a class="dropdown-item py-2 d-flex align-items-center" href="{{url('admin/marcas/perfil')}}">
+                             <a class="dropdown-item py-2 d-flex align-items-center" href="{{url('app/admin/marcas/perfil')}}">
                                  <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="{{ asset('admin/img/aldea_logo.jpg') }}" alt="" /></div>
                                  <div class="flex-1">
                                      <h6 class="mb-0 text-body-highlight title">LunaArtesanal</h6>
@@ -75,9 +74,9 @@
              </div>
          </div>
 
-         <ul class="navbar-nav navbar-nav-icons flex-row">
+         <ul class="d-print-none navbar-nav navbar-nav-icons flex-row">
              <li class="nav-item d-none d-sm-flex">
-                 <a id="new-sale" class="btn btn-primary btn-sm me-1 mb-1 key-tag f12" href="{{url('admin/nueva-venta')}}"><span class="fas fa-shopping-basket me-2"></span>Nueva venta</a>
+                 <a id="new-sale" class="btn btn-primary btn-sm me-1 mb-1 key-tag f12" href="{{url('pos/nueva-venta')}}"><span class="fas fa-shopping-basket me-2"></span>Nueva venta</a>
              </li>
 
              <!-- Light/Dark -->
@@ -181,7 +180,7 @@
                              </div>
                          </div>
                          <div class="card-footer p-0 border-top border-translucent border-0">
-                             <div class="my-2 text-center fw-bold fs-9 text-body-tertiary text-opactity-85"><a class="fw-bolder text-dark" href="{{url('admin/historial-movimientos')}}">Ver todo</a></div>
+                             <div class="my-2 text-center fw-bold fs-9 text-body-tertiary text-opactity-85"><a class="fw-bolder text-dark" href="{{url('app/admin/historial-movimientos')}}">Ver todo</a></div>
                          </div>
                      </div>
                  </div>
@@ -206,13 +205,13 @@
                          <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar">
                              <div class="row text-center align-items-center gx-0 gy-0">
                                  <div class="col-4">
-                                     <a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="{{url('admin/nueva-venta')}}">
+                                     <a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="{{url('app/admin/nueva-venta')}}">
                                          <span class="fas fa-shopping-basket text-secondary"></span>
                                          <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Venta</p>
                                      </a>
                                  </div>
                                  <div class="col-4">
-                                     <a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="{{url('admin/nueva-venta')}}">
+                                     <a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="{{url('app/admin/nueva-venta')}}">
                                          <span class="fas fa-history text-secondary"></span>
                                          <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Historial</p>
                                      </a>
@@ -245,14 +244,14 @@
                          </div>
                          <div class="overflow-auto scrollbar">
                              <ul class="nav d-flex flex-column mb-2 pb-1">
-                                 <li class="nav-item"><a class="nav-link px-3 d-block" href="{{url('admin/perfil')}}"> <span class="me-2 text-body align-bottom" data-feather="user"></span><span>Perfil</span></a></li>
+                                 <li class="nav-item"><a class="nav-link px-3 d-block" href="{{url('app/perfil')}}"> <span class="me-2 text-body align-bottom" data-feather="user"></span><span>Perfil</span></a></li>
                                  <li class="nav-item"><a class="nav-link px-3 d-block" href="#settings-offcanvas" data-bs-toggle="offcanvas"> <span class="me-2 text-body align-bottom" data-feather="sliders"></span>Apariencia</a></li>
                                  <li class="nav-item"><a class="nav-link px-3 d-block" href="#!"> <span class="me-2 text-body align-bottom" data-feather="help-circle"></span>Centro de ayuda</a></li>
                                  <li class="nav-item"><a class="nav-link px-3 d-block" href="#!"> <span class="me-2 text-body align-bottom" data-feather="globe"></span>Soporte técnico</a></li>
                              </ul>
                          </div>
                          <div class="card-footer p-0 border-top border-translucent pt-3">
-                             <div class="px-3"> <a class="btn btn-phoenix-secondary d-flex flex-center w-100" href="{{url('admin/login')}}"> <span class="me-2" data-feather="log-out"> </span>Cerrar sesión</a></div>
+                             <div class="px-3"> <a class="btn btn-phoenix-secondary d-flex flex-center w-100" href="{{url('app/sesion-finalizada')}}"> <span class="me-2" data-feather="log-out"> </span>Cerrar sesión</a></div>
                              <div class="my-2 text-center fw-bold fs-10 text-body-quaternary"><a class="text-body-quaternary me-1" href="#!">Politica de privacidad</a>&bull;<a class="text-body-quaternary mx-1" href="#!">Términos</a></div>
                          </div>
                      </div>

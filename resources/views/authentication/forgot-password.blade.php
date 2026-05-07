@@ -31,8 +31,8 @@ $title = 'Recuperar cuenta';
               <p class="text-body-tertiary mb-5">Introduce tu correo electrónico y te enviaremos a <br class="d-xxl-none" />un enlace para restablecer la contraseña.</p>
               <form class="d-flex align-items-center mb-5">
                 <input class="form-control flex-1" id="email" type="email" placeholder="Correo electrónico" />
-                <a class="btn btn-primary ms-2" href="{{url('admin/resetear-contrasena')}}">Enviar<span class="fas fa-chevron-right ms-2"></span></a>
-              </form><a class="fs-9 fw-bold" href="{{url('admin/login')}}">Recuerdo mi contraseña</a>
+                <a class="btn btn-primary ms-2" href="{{url('resetear-contrasena')}}">Enviar<span class="fas fa-chevron-right ms-2"></span></a>
+              </form><a class="fs-9 fw-bold" href="{{url('login')}}">Recuerdo mi contraseña</a>
             </div>
           </div>
         </div>

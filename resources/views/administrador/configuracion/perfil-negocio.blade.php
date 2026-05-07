@@ -26,21 +26,21 @@ $title = 'Perfil del negocio';
                         </div>
 
                         <div>
-                           <a href="{{url('admin/configuracion/perfil-del-negocio')}}" class="d-flex align-items-center link-submenu py-2 active">
+                           <a href="{{url('app/admin/configuracion/perfil-del-negocio')}}" class="d-flex align-items-center link-submenu py-2 active">
                               <i class="mb-1 me-2" data-feather="home" style="height: 15px; width: 15px;"></i>
                               <div class="lh-sm">
                                  <p class="mb-0 fs-9 fw-bold">General</p>
                                  <small>Define los datos públicos.</small>
                               </div>
                            </a>
-                           <a href="{{url('admin/configuracion/apariencia')}}" class="d-flex align-items-center link-submenu py-2">
+                           <a href="{{url('app/admin/configuracion/apariencia')}}" class="d-flex align-items-center link-submenu py-2">
                               <i class="mb-1 me-2" data-feather="pen-tool" style="height: 15px; width: 15px;"></i>
                               <div class="lh-sm">
                                  <p class="mb-0 fs-9 fw-bold">Apariencia</p>
                                  <small>Personaliza tus colores y estilo.</small>
                               </div>
                            </a>
-                           <a href="{{url('admin/configuracion/sucursales')}}" class="d-flex align-items-center link-submenu py-2">
+                           <a href="{{url('app/admin/configuracion/sucursales')}}" class="d-flex align-items-center link-submenu py-2">
                               <i class="mb-1 me-2" data-feather="map-pin" style="height: 15px; width: 15px;"></i>
                               <div class="lh-sm">
                                  <p class="mb-0 fs-9 fw-bold">Sucursales</p>
@@ -59,8 +59,8 @@ $title = 'Perfil del negocio';
 
                   <nav class="mb-3" aria-label="breadcrumb">
                      <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item fw-semibold"><a href="{{url('admin/dashboard')}}"><img src="{{ asset('admin/img/brand/kollabi_icon.svg') }}" class="ms-1 mb-1" alt="Kollabi" width="18" /></a></li>
-                        <li class="breadcrumb-item fw-semibold"><a href="{{url('admin/configuracion/perfil-del-negocio')}}">Perfil del negocio</a></li>
+                        <li class="breadcrumb-item fw-semibold"><a href="{{url('app/admin/dashboard')}}"><img src="{{ asset('admin/img/brand/kollabi_icon.svg') }}" class="ms-1 mb-1" alt="Kollabi" width="18" /></a></li>
+                        <li class="breadcrumb-item fw-semibold"><a href="{{url('app/admin/configuracion/perfil-del-negocio')}}">Perfil del negocio</a></li>
                         <li class="breadcrumb-item fw-normal active">Información</li>
                      </ol>
                   </nav>
